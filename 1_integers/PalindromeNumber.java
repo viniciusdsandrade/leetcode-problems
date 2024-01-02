@@ -42,14 +42,18 @@ public class PalindromeNumber {
 
     public static boolean isPalindrome(int x) {
 
+        // Se o número for negativo, não é palíndromo
         if (x < 0)
             return false;
 
+        // Se o número for 0, é palíndromo
         if (x != 0 && x % 10 == 0)
             return false;
 
+        // Converter o número para string
         String s = Integer.toString(x);
 
+        // Percorrer a string e verificar se o primeiro caractere é igual ao último, o segundo ao penúltimo, e assim por diante
         for (int i = 0; i < s.length() / 2; i++) {
             if (s.charAt(i) != s.charAt(s.length() - 1 - i))
                 return false;
