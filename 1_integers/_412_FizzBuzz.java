@@ -1,19 +1,18 @@
-import java.sql.SQLOutput;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
-public class FizzBuzz {
+public class _412_FizzBuzz {
     
     /*
-        Given an integer 'n', return a String array answer (1-indexed) where:
+        412. Given an integer 'n', return a String array answer (1-indexed) where:
         - answer[i] == "FizzBuzz" if i is divisible by 3 and 5.
         - answer[i] == "Fizz" if i is divisible by 3.
         - answer[i] == "Buzz" if i is divisible by 5.
         - answer[i] == i if none of the above conditions are true.
         
         Example 1:
-        
         Input: n = 3
         Output: ["1","2","Fizz"]
         
@@ -30,24 +29,27 @@ public class FizzBuzz {
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.print("Enter a number: ");
             int n = scanner.nextInt();
-
-            // Obtendo o tempo de início
-            long startTime = System.nanoTime();
-
-            FizzBuzz fizzBuzz = new FizzBuzz();
-            List<String> answer = fizzBuzz.fizzBuzz(n);
-
-            // Obtendo o tempo de término
-            long endTime = System.nanoTime();
-
-            // Imprimindo a resposta e o tempo de execução
-            System.out.println(answer);
-            System.out.println("Execution time: " + (endTime - startTime) + " ns");
-            System.out.println("Execution time: " + (endTime - startTime) / 1000000 + " ms");
+            runFizzBuzzTest(n);
+        } catch (InputMismatchException e) {
+            System.out.println(e.getMessage());
         }
     }
 
-    private List<String> fizzBuzz(int n) {
+    private static void runFizzBuzzTest(int n) {
+        try {
+            long startTime = System.nanoTime();
+            List<String> answer = fizzBuzz(n);
+            long endTime = System.nanoTime();
+            
+            System.out.println(answer);
+            System.out.println("Execution time: " + (endTime - startTime) + " ns");
+            System.out.printf("Execution time: %.5f ms\n", (endTime - startTime) / 1000000.0);
+        } catch (RuntimeException e) {
+            System.out.println("error: " + e.getMessage());
+        }
+    }
+
+    private static List<String> fizzBuzz(int n) {
         List<String> answer = new ArrayList<>();
 
         if (n < 1)

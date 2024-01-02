@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-public class ReverseInteger {
+public class _7_ReverseInteger {
 
     /*
-    Given a signed 32-bit integer x, return x with its digits reversed.
+    7. Given a signed 32-bit integer x, return x with its digits reversed.
     If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1],
     then return 0.
 
@@ -26,19 +26,23 @@ public class ReverseInteger {
     */
 
     public static void main(String[] args) {
+        testReverse(123);
+        testReverse(-123);
+        testReverse(120);
+    }
 
-        try (Scanner scanner = new Scanner(System.in)) {
-            System.out.print("Enter a number: ");
-            int x = scanner.nextInt();
-
+    private static void testReverse(int x) {
+        try {
             long startTime = System.nanoTime();
             int answer = reverse(x);
             long endTime = System.nanoTime();
-
-            System.out.println("Input:  " + x);
+            
+            System.out.println("\nInput:  " + x);
             System.out.println("Output: " + answer);
             System.out.println("Execution time: " + (endTime - startTime) + " ns");
-            System.out.println("Execution time: " + (endTime - startTime) / 1000000 + " ms");
+            System.out.printf("Execution time: %.6f ms\n", (endTime - startTime) / 1_000_000.0);
+        } catch (Exception e) {
+            System.err.println("Error in test: " + e.getMessage());
         }
     }
 

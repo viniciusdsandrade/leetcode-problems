@@ -17,31 +17,37 @@ public class PowX_N {
     * Input: x = 2.00000, n = -2
     * Output: 0.25000
     */
-    
+
     public static void main(String[] args) {
+            double[] bases = {2.0, 2.1, 2.0};
+            int[] exponents = {10, 3, -2};
+            runTests(bases, exponents);
+    }
 
-        try (Scanner scanner = new Scanner(System.in)) {
-            System.out.print("Enter a base: ");
-            double x = scanner.nextDouble();
+    private static void runTests(double[] bases, int[] exponents) {
+        for (int i = 0; i < bases.length; i++) {
+            double x = bases[i];
+            int n = exponents[i];
 
-            System.out.print("Enter an exponent: ");
-            int n = scanner.nextInt();
-            
             long startTime = System.nanoTime();
-
             double answer = myPow(x, n);
-            
             long endTime = System.nanoTime();
-
-            System.out.printf("Answer: %.5f\n", answer);
-            System.out.println("Execution time: " + (endTime - startTime) + " ns");
-            System.out.println("Execution time: " + (endTime - startTime) / 1000000 + " ms");
+            try {
+                printResult(x, n, answer, startTime, endTime);
+            } catch (RuntimeException e) {
+                System.out.println(e.getMessage());            
+            }
         }
     }
 
-    public static double myPow(double x, int n) {
+    private static void printResult(double x, int n, double answer, long startTime, long endTime) {
+        System.out.printf("Input: x = %.5f, n = %d\n", x, n);
+        System.out.printf("Answer: %.5f\n", answer);
+        System.out.println("Execution time: " + (endTime - startTime) + " ns");
+        System.out.printf("Execution time: %.5f ms\n", (endTime - startTime) / 1000000.0);
+    }
 
+    public static double myPow(double x, int n) {
         return Math.pow(x, n);
     }
 }
-
