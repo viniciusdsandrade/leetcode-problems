@@ -54,18 +54,19 @@ public class _13_RomanToInteger {
         testRomanToInt("LVIII");
         testRomanToInt("MCMXCIV");
     }
-    
+
     public static int romanToInt(String s) {
-        
+
         if (s == null || s.isEmpty()) return 0;
-        
+
         int result = 0;
-        
+
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
 
             switch (c) {
                 case 'I' -> {
+                    // Check for special cases
                     if (i + 1 < s.length() && s.charAt(i + 1) == 'V') {
                         result += 4;
                         i++;
@@ -105,16 +106,15 @@ public class _13_RomanToInteger {
                 default -> throw new IllegalArgumentException("Invalid character: " + c);
             }
         }
-        
         return result;
     }
-    
+
     private static void testRomanToInt(String s) {
         try {
             long startTime = System.nanoTime();
             int answer = romanToInt(s);
             long endTime = System.nanoTime();
-            
+
             System.out.println("\nInput:  " + s);
             System.out.println("Output: " + answer);
             System.out.println("Execution time: " + (endTime - startTime) + " ns");
