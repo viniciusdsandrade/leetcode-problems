@@ -48,7 +48,7 @@ public class _187_RepeatedDNASequence {
         System.out.println("\nInput: " + s);
         System.out.println("Output: " + result);
         System.out.println("Time: " + (end - start) + " ns");
-        System.out.printf("Time: %.5f ms\n", (end - start) / 1000000.0);
+        System.out.printf("Time: %.5f ms\n", (end - start) / 1_000_000.0);
     }
 
     // O(n) time complexity

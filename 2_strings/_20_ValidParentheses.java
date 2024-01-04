@@ -5,7 +5,9 @@ public class _20_ValidParentheses {
     /*
     20. Valid Parentheses
     
-    Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+    Given a string s containing just the characters 
+    '(', ')', '{', '}', '[' and ']', 
+    determine if the input string is valid.
 
     An input string is valid if:
 
@@ -31,7 +33,7 @@ public class _20_ValidParentheses {
      */
 
     public static void main(String[] args) {
-        
+
         String s1 = "()";
         String s2 = "()[]{}";
         String s3 = "(]";
@@ -40,7 +42,7 @@ public class _20_ValidParentheses {
         String s6 = "]";
         String s7 = "([}}])";
         String s8 = "(([]){})";
-        
+
         testIsValid(s1);
         testIsValid(s2);
         testIsValid(s3);
@@ -49,7 +51,6 @@ public class _20_ValidParentheses {
         testIsValid(s6);
         testIsValid(s7);
         testIsValid(s8);
-        
     }
 
     public static boolean isValid(String s) {
@@ -67,7 +68,8 @@ public class _20_ValidParentheses {
         for (char c : s.toCharArray()) {
             // Se o caractere for uma abertura, adiciona à pilha
             if (open.contains(c)) {
-                stack[++top] = c;
+                top++;
+                stack[top] = c;
             } else {
                 // Se o caractere for um fechamento
                 // Verifica se a pilha está vazia, o que significa que não há correspondência para o fechamento
@@ -86,17 +88,17 @@ public class _20_ValidParentheses {
         // Verifica se a pilha está vazia no final. Se estiver, a expressão está balanceada
         return top == -1;
     }
-    
+
     public static void testIsValid(String s) {
-        System.out.println("Input:  " + Arrays.toString(s.toCharArray()));
-        
+        System.out.println("Input:  " + s);
+
         long start = System.nanoTime();
         boolean result = isValid(s);
         long end = System.nanoTime();
-        
+
         System.out.println("Output: " + result);
         System.out.println("Time: " + (end - start) + " ns");
-        System.out.printf("Time: %.5f ms\n", (end - start) / 1000000.0);
+        System.out.printf("Time: %.5f ms\n", (end - start) / 1_000_000.0);
         System.out.println();
     }
 }

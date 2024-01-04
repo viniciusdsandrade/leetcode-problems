@@ -3,8 +3,8 @@ import java.util.Arrays;
 public class _344_ReverseString {
 
     /*
-    344. Write a function that reverses a string. The input string is given as an array of characters s.
-
+    344. Write a function that reverses a string. 
+    The input string is given as an array of characters s.
     You must do this by modifying the input array in-place with O(1) extra memory.
 
     Example 1:
@@ -38,7 +38,7 @@ public class _344_ReverseString {
         System.out.print("Output: ");
         printCharVector(s);
         System.out.println("\nTime: " + (end - start) + " ns");
-        System.out.printf("Time: %.5f ms\n", (end - start) / 1000000.0);
+        System.out.printf("Time: %.5f ms\n", (end - start) / 1_000_000.0);
         System.out.println();
     }
 
@@ -61,7 +61,7 @@ public class _344_ReverseString {
             right--;
         }
     }
-    
+
     public static void swap(char[] s, int left, int right) {
         char temp = s[left];
         s[left] = s[right];
