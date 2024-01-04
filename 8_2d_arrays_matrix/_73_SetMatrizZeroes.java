@@ -27,37 +27,79 @@ public class _73_SetMatrizZeroes {
     Could you devise a constant space solution?
      */
     public static void main(String[] args) {
+        // Test Case 1
         int[][] matrix1 = {
                 {0, 1, 2, 0},
                 {3, 4, 5, 1},
                 {1, 3, 1, 5}
         };
 
-        setZeroes(matrix1);
-
-        System.out.println("Result: ");
-        for (int[] row : matrix1) {
-            for (int col : row) {
-                System.out.print(col + " ");
-            }
-            System.out.println();
-        }
-        
+        // Test Case 2
         int[][] matrix2 = {
                 {1, 1, 1},
                 {1, 0, 1},
                 {1, 1, 1}
         };
-        
+
+        // Test Case 3
+        int[][] matrix3 = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 0}
+        };
+
+        // Test Case 4
+        int[][] matrix4 = {
+                {1, 0},
+                {3, 4},
+                {5, 6}
+        };
+
+        // Test Case 5
+        int[][] matrix5 = {
+                {1, 1, 1},
+                {0, 1, 2}
+        };
+
+        System.out.println("Test Case 1\nInput:");
+        printMatrix(matrix1);
+        setZeroes(matrix1);
+        System.out.println("Result:");
+        printMatrix(matrix1);
+
+        System.out.println("Test Case 2\nInput:");
+        printMatrix(matrix2);
         setZeroes(matrix2);
-        
-        System.out.println("Result: ");
-        for (int[] row : matrix2) {
+        System.out.println("Result:");
+        printMatrix(matrix2);
+
+        System.out.println("Test Case 3\nInput:");
+        printMatrix(matrix3);
+        setZeroes(matrix3);
+        System.out.println("Result:");
+        printMatrix(matrix3);
+
+        System.out.println("Test Case 4\nInput:");
+        printMatrix(matrix4);
+        setZeroes(matrix4);
+        System.out.println("Result:");
+        printMatrix(matrix4);
+
+        System.out.println("Test Case 5\nInput:");
+        printMatrix(matrix5);
+        setZeroes(matrix5);
+        System.out.println("Result:");
+        printMatrix(matrix5);
+    }
+
+    public static void printMatrix(int[][] matrix) {
+        for (int[] row : matrix) {
             for (int col : row) {
                 System.out.print(col + " ");
             }
             System.out.println();
         }
+        System.out.println();
     }
 
     public static void setZeroes(int[][] matrix) {
@@ -78,7 +120,7 @@ public class _73_SetMatrizZeroes {
             }
         }
         
-        // set row and col to 0
+        // set row 0
         for (int i = 0; i < m; i++) {
             if (row[i]) {
                 for (int j = 0; j < n; j++) {
@@ -87,6 +129,7 @@ public class _73_SetMatrizZeroes {
             }
         }
         
+        // set col 0
         for (int j = 0; j < n; j++) {
             if (col[j]) {
                 for (int i = 0; i < m; i++) {
