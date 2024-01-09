@@ -2,36 +2,39 @@ import java.util.Arrays;
 
 public class _189_RotateArray {
     public static void main(String[] args) {
-
         int[] arr1 = {1, 2, 3, 4, 5, 6, 7};
-        testRotate(arr1, 1);
-        testRotate(arr1, 7);
-        testRotate(arr1, 14);
-
-        int[] arr2 = {-1, -100, 3, 99};
-        testRotate(arr2, 2);
-
-        int[] arr3 = {1, 2, 3, 4, 5, 6};
-        testRotate(arr3, 4);
+        testRotate(arr1, 2);
     }
 
     public static void rotate(int[] nums, int k) {
+        int n = nums.length;
+        k = k % n;
 
-        if (k == 0 || nums.length == 1 || k == nums.length) return;
+        System.out.println("Array original: " + Arrays.toString(nums));
 
-        if (k > nums.length)
-            k = k % nums.length; // Se k for maior que o tamanho do array, k = k % nums.length (resto da divisão de k por nums.length
+        reverse(nums, 0, n - 1);
+        System.out.println("Array após inverter todo o array: " + Arrays.toString(nums));
 
-        for (int i = 0; i < k; i++) {
-            int last = nums[nums.length - 1]; // Define o último elemento do array
+        reverse(nums, 0, k - 1); // Inverte os primeiros k elementos
+        System.out.println("Array após inverter os primeiros " + k + " elementos: " + Arrays.toString(nums));
 
-            // Move todos os elementos do array para a direita
-            for (int j = nums.length - 1; j > 0; j--)
-                nums[j] = nums[j - 1];
+        reverse(nums, k, n - 1); // Inverte os elementos restantes
+        System.out.println("Array após inverter os elementos restantes: " + Arrays.toString(nums));
+    }
 
-            nums[0] = last; // Define o primeiro elemento do array como o último
+    private static void reverse(int[] nums, int start, int end) {
+        while (start < end) {
+            int temp = nums[start];
+            nums[start] = nums[end];
+            nums[end] = temp;
+
+            System.out.println("  Troca: " + Arrays.toString(nums));
+
+            start++;
+            end--;
         }
     }
+
 
     public static void testRotate(int[] nums, int k) {
         System.out.println("\nInput: " + Arrays.toString(nums) + ", k = " + k);
