@@ -3,7 +3,10 @@ import java.util.Arrays;
 public class _189_RotateArray {
     public static void main(String[] args) {
         int[] arr1 = {1, 2, 3, 4, 5, 6, 7};
-        testRotate(arr1, 2);
+        testRotate(arr1, 3);
+
+        int[] arr2 = {-1, -100, 3, 99};
+        testRotate(arr2, 2);
     }
 
     public static void rotate(int[] nums, int k) {
@@ -27,8 +30,6 @@ public class _189_RotateArray {
             int temp = nums[start];
             nums[start] = nums[end];
             nums[end] = temp;
-
-            System.out.println("  Troca: " + Arrays.toString(nums));
 
             start++;
             end--;
