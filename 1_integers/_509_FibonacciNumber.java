@@ -1,5 +1,3 @@
-import com.sun.security.jgss.GSSUtil;
-
 public class _509_FibonacciNumber {
 
     /*
@@ -33,8 +31,9 @@ public class _509_FibonacciNumber {
      */
 
     public static void main(String[] args) {
-        for (int i = 0; i <= 100; i++)
+        for (int i = 0; i <= 92; i++) {
             testFib(i);
+        }
     }
 
     public static long fib(long n) {
@@ -42,28 +41,36 @@ public class _509_FibonacciNumber {
         return fib(n - 1) + fib(n - 2);
     }
 
+    public static long fib2(long n) {
+        if (n <= 1) {
+            System.out.println("Fibonacci de " + n + ": " + n);
+            return n;
+        }
 
-    public static int fib2(int n) {
-        if (n <= 1) return n;
-
-        int[] fib = new int[n + 1];
+        long[] fib = new long[(int) (n + 1)];
         fib[0] = 0;
         fib[1] = 1;
 
-        for (int i = 2; i <= n; i++)
-            fib[i] = fib[i - 1] + fib[i - 2];
+        System.out.println("Fibonacci de 0: " + fib[0]);
+        System.out.println("Fibonacci de 1: " + fib[1]);
 
-        return fib[n];
+        for (int i = 2; i <= n; i++) {
+            fib[i] = fib[i - 1] + fib[i - 2];
+            System.out.println("Fibonacci de " + i + ": " + fib[i]);
+        }
+
+        return fib[(int) n];
     }
 
     public static void testFib(int n) {
+        System.out.println("==============================================================");
         System.out.println("\nInput: " + n);
         long startTime = System.nanoTime();
         //long answer = fib(n);
         long endTime = System.nanoTime();
 
         long startTime2 = System.nanoTime();
-        int answer2 = fib2(n);
+        long answer2 = fib2(n);
         long endTime2 = System.nanoTime();
 
         long interval1 = endTime - startTime;
@@ -74,5 +81,6 @@ public class _509_FibonacciNumber {
         System.out.printf("Recursive time: %.5f ms\n", interval1 / 1_000_000.0);
         System.out.printf("Iterative time: %.5f ms\n", interval2 / 1_000_000.0);
         System.out.printf("Recursivo/Iterativo: %.3f\n", interval1 / (double) interval2);
+        System.out.println("==============================================================");
     }
 }
