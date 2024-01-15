@@ -29,7 +29,7 @@ public class _67_AddBinary {
         testAddBinary("111", "111");
     }
 
-=
+
     public static String addBinary(String a, String b) {
         StringBuilder answer = new StringBuilder();
         int carry = 0;
