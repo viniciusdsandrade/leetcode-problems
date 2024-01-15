@@ -76,7 +76,6 @@ public class _509_FibonacciNumber {
         long interval1 = endTime - startTime;
         long interval2 = endTime2 - startTime2;
 
-
         System.out.println("Output: " + answer2);
         System.out.printf("Recursive time: %.5f ms\n", interval1 / 1_000_000.0);
         System.out.printf("Iterative time: %.5f ms\n", interval2 / 1_000_000.0);

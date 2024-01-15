@@ -10,36 +10,38 @@ public class _204_CountPrimes {
         testCountPrimes(6);
         testCountPrimes(7);
         testCountPrimes(8);
-        testCountPrimes(99999);
+        testCountPrimes(999999999);
     }
 
     public static int countPrimes(int n) {
+        if (n <= 1) return 0;
 
-        if(n < 0) throw new IllegalArgumentException("n must be non-negative");
+        boolean[] notPrime = new boolean[n];
+        notPrime[0] = true;
+        notPrime[1] = true;
 
-        if (n <= 2) {
-            return 0;
-        }
-
-        int count = 0;
-
-        for (int i = 2; i < n; i++) {
-            if (isPrime(i)) {
-                count++;
+        for (int i = 2; i < Math.sqrt(n); i++) {
+            if (!notPrime[i]) {
+                for (int j = 2; j * i < n; j++) {
+                    notPrime[i * j] = true;
+                }
             }
         }
 
+        int count = 0;
+        for (int i = 2; i < notPrime.length; i++) {
+            if (!notPrime[i]) count++;
+        }
         return count;
     }
 
+
     public static boolean isPrime(int n) {
         if (n <= 1) return false;
-
         if (n <= 3) return true;
-
         if (n % 2 == 0 || n % 3 == 0) return false;
 
-        for (int i = 5; i * i <= n; i = i + 6) {
+        for (int i = 5; i * i <= n; i += 6) {
             if (n % i == 0 || n % (i + 2) == 0) {
                 return false;
             }
@@ -47,6 +49,7 @@ public class _204_CountPrimes {
 
         return true;
     }
+
 
     public static void testCountPrimes(int n) {
         long startTime = System.nanoTime();
