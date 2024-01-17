@@ -38,10 +38,10 @@ public class _168_ExcelSheetColumnTitle {
 
         testConvertToTile(1);
         testConvertToTile(28);
-//        testConvertToTile(52);
-//        testConvertToTile(53);
-//        testConvertToTile(701);
-//        testConvertToTile(2147483647);
+        testConvertToTile(52);
+        testConvertToTile(53);
+        testConvertToTile(701);
+        testConvertToTile(2147483647);
     }
 
     public static String convertToTitle(int columnNumber) {
@@ -57,7 +57,6 @@ public class _168_ExcelSheetColumnTitle {
         
         StringBuilder sb = new StringBuilder();
 
-        // Itera enquanto o número da coluna é maior que zero
         while (columnNumber > 0) {
             // Calcula o resto da divisão por 26 e atualiza o número da coluna
             int remainder = columnNumber % 26;
@@ -70,11 +69,9 @@ public class _168_ExcelSheetColumnTitle {
             if (remainder == 0) {
                 // Adiciona a letra correspondente a 26 (Z) e ajusta o número da coluna
                 sb.append(map.get(26));
-                System.out.println("sb: " + sb);
                 columnNumber--;
             } else {
                 sb.append(map.get(remainder)); // Adiciona a letra correspondente ao resto
-                System.out.println("sb: " + sb);
             }
         }
         // Inverte a string construída e a retorna
