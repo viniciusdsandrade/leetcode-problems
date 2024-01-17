@@ -29,6 +29,8 @@ public class _541_ReverseStringII {
     public static void main(String[] args) {
         testReverseStr("abcdefg", 2);
         testReverseStr("abcd", 2);
+        testReverseStr("ab", 2);
+        testReverseStr("a", 2);
     }
 
     public static String reverseStr(String s, int k) {
