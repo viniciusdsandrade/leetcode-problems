@@ -29,69 +29,75 @@ public class _54_SpiralMatrix {
 
     public static List<Integer> spiralOrder(int[][] matrix) {
 
+        // Verifica se a matriz é nula ou vazia
         if (matrix == null || matrix.length == 0) return new ArrayList<>();
 
-        List<Integer> result = new ArrayList<>();
-        int rowStart = 0;
-        int rowEnd = matrix.length - 1;
+        // Lista para armazenar os elementos percorridos em ordem espiral
+        List<Integer> resultado = new ArrayList<>();
 
-        int colStart = 0;
-        int colEnd = matrix[0].length - 1;
+        // Inicialização de variáveis para marcar as extremidades da matriz
+        int inicioLinha = 0;
+        int fimLinha = matrix.length - 1;
 
-        while (rowStart <= rowEnd && colStart <= colEnd) {
+        int inicioColuna = 0;
+        int fimColuna = matrix[0].length - 1;
 
-            // Traverse Right
-            for (int i = colStart; i <= colEnd; i++) {
-                result.add(matrix[rowStart][i]);
+        // Loop para percorrer a matriz em espiral
+        while (inicioLinha <= fimLinha && inicioColuna <= fimColuna) {
+
+            // Percorre da esquerda para a direita na linha superior (Travessia para a Direita)
+            for (int i = inicioColuna; i <= fimColuna; i++) {
+                resultado.add(matrix[inicioLinha][i]);
             }
-            rowStart++;
+            inicioLinha++;
 
-            // Traverse Down
-            for (int i = rowStart; i <= rowEnd; i++) {
-                result.add(matrix[i][colEnd]);
+            // Percorre de cima para baixo na coluna à direita (Travessia para Baixo)
+            for (int i = inicioLinha; i <= fimLinha; i++) {
+                resultado.add(matrix[i][fimColuna]);
             }
-            colEnd--;
+            fimColuna--;
 
-            // Traverse Left
-            if (rowStart <= rowEnd) {
-                for (int i = colEnd; i >= colStart; i--) {
-                    result.add(matrix[rowEnd][i]);
+            // Percorre da direita para a esquerda na linha inferior, se houver mais linhas (Travessia para a Esquerda)
+            if (inicioLinha <= fimLinha) {
+                for (int i = fimColuna; i >= inicioColuna; i--) {
+                    resultado.add(matrix[fimLinha][i]);
                 }
             }
-            rowEnd--;
+            fimLinha--;
 
-            // Traverse Up
-            if (colStart <= colEnd) {
-                for (int i = rowEnd; i >= rowStart; i--) {
-                    result.add(matrix[i][colStart]);
+            // Percorre de baixo para cima na coluna à esquerda, se houver mais colunas (Travessia para Cima)
+            if (inicioColuna <= fimColuna) {
+                for (int i = fimLinha; i >= inicioLinha; i--) {
+                    resultado.add(matrix[i][inicioColuna]);
                 }
             }
-            colStart++;
+            inicioColuna++;
         }
 
-        return result;
+        // Retorna a lista resultante contendo os elementos da matriz percorridos em ordem espiral
+        return resultado;
     }
 
     public static void testSpiralOrder(int[][] matrix) {
-        System.out.println("Input: \n" + printMatrix(matrix));
+        System.out.println("\nInput: \n" + printMatrix(matrix));
 
         long startTime = System.nanoTime();
         List<Integer> result = spiralOrder(matrix);
         long endTime = System.nanoTime();
 
         System.out.println("Output: " + result);
-        System.out.printf("Runtime: %.3f ns\n\n", (endTime - startTime) / 1_000_000.00);
-        System.out.printf("Runtime: %.3f ms\n\n", (endTime - startTime) / 1_000_000.00);
+        System.out.printf("Runtime: %d ns\n", (endTime - startTime));
+        System.out.printf("Runtime: %.6f ms\n\n", (endTime - startTime) / 1_000_000.00);
     }
 
 
     private static String printMatrix(int[][] matrix) {
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < matrix.length; i++) {
+        for (int[] ints : matrix) {
             sb.append("[");
-            for (int j = 0; j < matrix[i].length; j++) {
-                sb.append(matrix[i][j]);
-                if (j != matrix[i].length - 1) {
+            for (int j = 0; j < ints.length; j++) {
+                sb.append(ints[j]);
+                if (j != ints.length - 1) {
                     sb.append(", ");
                 }
             }
