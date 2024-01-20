@@ -11,11 +11,20 @@ public class _74_SearchA2DMatrix {
     You must write a solution in O(log(m * n)) time complexity.
 
     Example 1:
-    Input: matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 3
+    Input: matrix = [
+        [1,3,5,7],
+        [10,11,16,20],
+        [23,30,34,60]
+    ],
+    target = 3
     Output: true
 
     Example 2:
-    Input: matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 13
+    Input: matrix = [
+        [1,3,5,7],
+        [10,11,16,20],
+        [23,30,34,60]
+    ], target = 13
     Output: false
 
     Constraints:
@@ -23,7 +32,6 @@ public class _74_SearchA2DMatrix {
     n == matrix[i].length
     1 <= m, n <= 100
     -10^4 <= matrix[i][j], target <= 10^4
-
      */
 
     public static void main(String[] args) {
@@ -140,7 +148,7 @@ public class _74_SearchA2DMatrix {
                 {1901, 1902, 1903, 1904, 1905, 1906, 1907, 1908, 1909, 1910, 1911, 1912, 1913, 1914, 1915, 1916, 1917, 1918, 1919, 1920},
                 {1921, 1922, 1923, 1924, 1925, 1926, 1927, 1928, 1929, 1930, 1931, 1932, 1933, 1934, 1935, 1936, 1937, 1938, 1939, 1940}
         };
-        testSearchMatrix(matrix3, 1);
+        testSearchMatrix(matrix3, 1940);
     }
 
 
@@ -189,12 +197,14 @@ public class _74_SearchA2DMatrix {
         boolean result2 = searchMatrix2(matrix, target);
         long end2 = System.nanoTime();
 
-        double runtime = (end - start) / 1_000_000.0;
+        double runtime = (end - start);
+        double runtime2 = (end2 - start2);
 
         System.out.println("Output: " + result2);
-        System.out.printf("Runtime1: %.5f ns\n", (end - start) / 1_000_000.0);
-        System.out.printf("Runtime2: %.5f ns\n", (end2 - start2) / 1_000_000.0);
-        System.out.printf("result1/result2: %.2f X\n", runtime / ((end2 - start2) / 1_000_000.0));
+        System.out.println("Output: " + result);
+        System.out.printf("Runtime1: %d ns\n", (end - start));
+        System.out.printf("Runtime2: %d ns\n", (end2 - start2));
+        System.out.printf("result1/result2: %.4f X\n", runtime2 / runtime);
     }
 
     private static void printMatrix(int[][] matrix) {
