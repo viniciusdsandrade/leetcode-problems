@@ -51,17 +51,20 @@ public class _36_ValidSudoku {
 
     public static boolean isValidSudoku(char[][] board) {
         if (board == null || board.length == 0) return false;
+
         for (int row = 0; row < board.length; row++) {
             for (int col = 0; col < board[row].length; col++) {
                 if (board[row][col] != '.') {
-                    int num = board[row][col];
+                    char num = board[row][col];
                     board[row][col] = '.';
+
                     if (!isValidPlacement(board, row, col, num)) return false;
 
-                    board[row][col] = (char) num;
+                    board[row][col] = num;
                 }
             }
         }
+
         return true;
     }
 
