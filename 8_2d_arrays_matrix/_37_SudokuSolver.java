@@ -72,46 +72,39 @@ public class _37_SudokuSolver {
     }
 
 
-    private static boolean isNumberInRow(char[][] board, int row, char num) {
-        for (int i = 0; i < 9; i++) {
-            if (board[row][i] == num) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    private static boolean isNumberInCol(char[][] board, int col, char num) {
-        for (int i = 0; i < 9; i++) {
-            if (board[i][col] == num) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-
-    private static boolean isNumberInBox(char[][] board, int startRow, int startCol, char num) {
-
-        int boxRow = startRow - startRow % 3;
-        int boxCol = startCol - startCol % 3;
-
-        for (int i = boxRow; i < boxRow + 3; i++) {
-            for (int j = boxCol; j < boxCol + 3; j++) {
-                if (board[i][j] == num) {
-                    return true;
-                }
-            }
-        }
-
-        return false;
-    }
-
-    private static boolean isValidPlacement(char[][] board, int row, int col, char num) {
-
+    private static boolean isValidPlacement(char[][] board, int row, int col, int num) {
         return !isNumberInRow(board, row, num) &&
                 !isNumberInCol(board, col, num) &&
                 !isNumberInBox(board, row, col, num);
+    }
+
+    private static boolean isNumberInRow(char[][] board, int row, int num) {
+        for (int i = 0; i < board.length; i++) {
+            if (board[row][i] == num)
+                return true;
+        }
+        return false;
+    }
+
+    private static boolean isNumberInCol(char[][] board, int col, int num) {
+        for (int i = 0; i < 9; i++) {
+            if(board[i][col] == num)
+                return true;
+        }
+        return false;
+    }
+
+    private static boolean isNumberInBox(char[][] board, int row, int col, int num) {
+        int boxRow = row - row % 3;
+        int boxCol = col - col % 3;
+
+        for (int i = boxRow; i < boxRow + 3; i++) {
+            for (int j = boxCol; j < boxCol + 3; j++) {
+                if (board[i][j] == num)
+                    return true;
+            }
+        }
+        return false;
     }
 
     public static void testSolveSudoku(char[][] board) {
@@ -147,7 +140,6 @@ public class _37_SudokuSolver {
                 }
             }
         }
-
         return sb.toString();
     }
 }

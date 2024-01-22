@@ -57,17 +57,13 @@ public class _36_ValidSudoku {
                 if (board[row][col] != '.') {
                     char num = board[row][col];
                     board[row][col] = '.';
-
                     if (!isValidPlacement(board, row, col, num)) return false;
-
                     board[row][col] = num;
                 }
             }
         }
-
         return true;
     }
-
 
     private static boolean isValidPlacement(char[][] board, int row, int col, int num) {
         return !isNumberInRow(board, row, num) &&
@@ -84,9 +80,8 @@ public class _36_ValidSudoku {
     }
 
     private static boolean isNumberInCol(char[][] board, int col, int num) {
-        for (int i = 0; i < board.length; i++) {
-            char[] chars = board[i];
-            if (chars[col] == num)
+        for (int i = 0; i < 9; i++) {
+            if(board[i][col] == num)
                 return true;
         }
         return false;
