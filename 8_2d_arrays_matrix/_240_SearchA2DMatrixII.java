@@ -163,8 +163,7 @@ public class _240_SearchA2DMatrixII {
     }
 
     public static boolean searchMatrix(int[][] matrix, int target) {
-
-        // Start our "pointer" in the bottom-left
+        
         int row = matrix.length - 1;
         int col = 0;
 
