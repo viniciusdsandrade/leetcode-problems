@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class _509_FibonacciNumber {
 
     /*
@@ -31,14 +34,119 @@ public class _509_FibonacciNumber {
      */
 
     public static void main(String[] args) {
-        for (int i = 0; i <= 92; i++) {
-            testFib(i);
+
+        System.out.println(somaSequencia(123L));
+
+
+        String nome = "Vinícius dos Santos Andrade";
+        System.out.println(reverseString(nome));
+        System.out.println(reverseString2(nome));
+        System.out.println(reverseString3(nome));
+        System.out.println(reverseString4(nome));
+
+        for (int i = 0; i <= 1000; i++) {
+            System.out.println(isFibonacciNumberString(i));
         }
     }
 
     public static long fib(long n) {
-        if (n <= 1) return  n;
+        if (n <= 1) return n;
         return fib(n - 1) + fib(n - 2);
+    }
+
+    public static List<Long> generateFirstNFibonacciNumbers(int n) {
+        List<Long> sequence = new ArrayList<>();
+        sequence.add(0L);
+        sequence.add(1L);
+        for (int i = 2; i < n; i++) {
+            sequence.add(sequence.get(i - 1) + sequence.get(i - 2));
+        }
+        return sequence;
+    }
+
+    public static List<Long> generateFibonacciNumbersLessThan(long num) {
+        List<Long> sequence = new ArrayList<>();
+        sequence.add(0L);
+        sequence.add(1L);
+        int i = 2;
+        while (true) {
+            long nextNum = sequence.get(i - 1) + sequence.get(i - 2);
+            if (nextNum > num) {
+                break;
+            }
+            sequence.add(nextNum);
+            i++;
+        }
+        return sequence;
+    }
+
+    public static Long somaSequencia(Long INDICE) {
+        long SOMA = 0L, K = 0L;
+
+        while (K < INDICE) {
+            K = K + 1;
+            SOMA = SOMA + K;
+        }
+
+        return SOMA;
+    }
+
+    /*
+    5) Escreva um programa que inverta os caracteres de um string.
+     */
+
+    public static String reverseString(String str) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = str.length() - 1; i >= 0; i--) {
+            sb.append(str.charAt(i));
+        }
+        return sb.toString();
+    }
+
+
+
+    public static String reverseString2(String str) {
+        String reversed = "";
+        for (int i = str.length() - 1; i >= 0; i--) {
+            reversed  = reversed + str.charAt(i);
+        }
+        return reversed;
+    }
+
+    public static String reverseString3(String str) {
+        return new StringBuilder(str).reverse().toString();
+    }
+
+    public static String reverseString4(String str) {
+        return str.chars()
+                .mapToObj(c -> (char) c)
+                .reduce("", (s, c) -> c + s, (s1, s2) -> s2 + s1);
+    }
+
+
+
+    public static String isFibonacciNumberString(long num) {
+        return isFibonacciNumber(num) ?
+                num + " pertence a sequencia de Fibonacci" :
+                num + " não pertence a sequencia de Fibonacci";
+    }
+
+    public static boolean isFibonacciNumber(long num) {
+        if (num < 0) return false;
+
+        List<Long> sequence = new ArrayList<>();
+        sequence.add(0L);
+        sequence.add(1L);
+        int i = 2;
+        while (true) {
+            long nextNum = sequence.get(i - 1) + sequence.get(i - 2);
+            if (nextNum > num) {
+                break;
+            }
+            sequence.add(nextNum);
+            i++;
+        }
+        return sequence.contains(num);
     }
 
     public static long fib2(long n) {
