@@ -33,31 +33,38 @@ public class _234_palindrome_linked_list {
         testIsPalindrome(head_3);
     }
 
-    public static boolean isPalindrome(ListNode head) {
-        ListNode slow = head;
-        ListNode fast = head;
+    public static boolean isPalindrome(ListNode cabeca) {
+        // 'lento' e 'rapido' são ponteiros para percorrer a lista
+        ListNode lento = cabeca;
+        ListNode rapido = cabeca;
 
-        while (fast != null && fast.next != null) {
-            slow = slow.next;
-            fast = fast.next.next;
+        // Avança 'lento' em um nó e 'rapido' em dois nós por vez
+        // Quando 'rapido' chegar ao fim da lista, 'lento' estará no meio
+        while (rapido != null && rapido.next != null) {
+            lento = lento.next;
+            rapido = rapido.next.next;
         }
 
-        ListNode prev = null;
-        while (slow != null) {
-            ListNode next = slow.next;
-            slow.next = prev;
-            prev = slow;
-            slow = next;
+        // Inverte a segunda metade da lista
+        ListNode anterior = null;
+        while (lento != null) {
+            ListNode proximo = lento.next;
+            lento.next = anterior;
+            anterior = lento;
+            lento = proximo;
         }
 
-        while (prev != null) {
-            if (head.val != prev.val) {
+        // Compara a primeira metade da lista com a segunda metade invertida
+        // Se algum valor não corresponder, a lista não é um palíndromo
+        while (anterior != null) {
+            if (cabeca.val != anterior.val) {
                 return false;
             }
-            head = head.next;
-            prev = prev.next;
+            cabeca = cabeca.next;
+            anterior = anterior.next;
         }
 
+        // Se todos os valores corresponderem, a lista é um palíndromo
         return true;
     }
 
