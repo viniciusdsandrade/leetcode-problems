@@ -54,7 +54,7 @@ public class ListNode {
 
         ListNode other = (ListNode) obj;
 
-        return this.val == other.val &&
+        return Objects.equals(this.val, other.val) &&
                 Objects.equals(this.next, other.next);
     }
 }

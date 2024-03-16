@@ -7,8 +7,9 @@ public class _0_print_challenge {
      um loop que adicione 50 mil números sequenciais em um Array depois realize a soma de todos eles
      */
     public static void main(String[] args) {
-        int ciclos = 10;
+
         int repeticoes = 10_000;
+        int ciclos = 10;
         Instant start;
         Instant end;
         int i, j;
