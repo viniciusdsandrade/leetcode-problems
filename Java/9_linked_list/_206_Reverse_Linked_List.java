@@ -41,8 +41,8 @@ public class _206_Reverse_Linked_List {
         ListNode proximo;
 
         while (atual != null) {
-            proximo = atual.next;
-            atual.next = anterior;
+            proximo = atual.proximo;
+            atual.proximo = anterior;
             anterior = atual;
             atual = proximo;
         }

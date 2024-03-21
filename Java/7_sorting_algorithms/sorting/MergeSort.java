@@ -1,7 +1,5 @@
 package sorting;
 
-import java.util.Arrays;
-
 public class MergeSort {
     public static void merge(int[] arr, int l, int m, int r) {
         int n1 = m - l + 1;
