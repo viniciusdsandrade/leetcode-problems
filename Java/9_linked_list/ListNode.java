@@ -3,7 +3,7 @@ import java.util.Objects;
 public class ListNode implements Cloneable {
 
     int val;
-    ListNode proximo;
+    ListNode next;
 
     ListNode() {
     }
@@ -12,9 +12,9 @@ public class ListNode implements Cloneable {
         this.val = val;
     }
 
-    ListNode(int val, ListNode proximo) {
+    ListNode(int val, ListNode next) {
         this.val = val;
-        this.proximo = proximo;
+        this.next = next;
     }
 
     // Copy constructor
@@ -22,7 +22,7 @@ public class ListNode implements Cloneable {
         if (molde == null) throw new IllegalArgumentException("molde cannot be null");
 
         this.val = (int) ShallowOrDeepCopy.verifyAndCopy(molde.val);
-        this.proximo = (ListNode) ShallowOrDeepCopy.verifyAndCopy(molde.proximo);
+        this.next = (ListNode) ShallowOrDeepCopy.verifyAndCopy(molde.next);
     }
 
     @Override
@@ -44,10 +44,10 @@ public class ListNode implements Cloneable {
         ListNode current = this;
         while (current != null) {
             sb.append(current.val);
-            if (current.proximo != null) {
+            if (current.next != null) {
                 sb.append(" -> ");
             }
-            current = current.proximo;
+            current = current.next;
         }
         sb.append("]");
         return sb.toString();
@@ -59,7 +59,7 @@ public class ListNode implements Cloneable {
         int hash = 1;
 
         hash *= prime + this.val;
-        hash *= prime + ((this.proximo == null) ? 0 : this.proximo.hashCode());
+        hash *= prime + ((this.next == null) ? 0 : this.next.hashCode());
 
         if (hash < 0) hash *= -1;
 
@@ -76,6 +76,6 @@ public class ListNode implements Cloneable {
         ListNode other = (ListNode) obj;
 
         return Objects.equals(this.val, other.val) &&
-                Objects.equals(this.proximo, other.proximo);
+                Objects.equals(this.next, other.next);
     }
 }

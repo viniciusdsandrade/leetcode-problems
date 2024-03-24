@@ -40,16 +40,16 @@ public class _234_Palindrome_Linked_List {
 
         // Avança 'lento' em um nó e 'rapido' em dois nós por vez
         // Quando 'rapido' chegar ao fim da lista, 'lento' estará no meio
-        while (rapido != null && rapido.proximo != null) {
-            lento = lento.proximo;
-            rapido = rapido.proximo.proximo;
+        while (rapido != null && rapido.next != null) {
+            lento = lento.next;
+            rapido = rapido.next.next;
         }
 
         // Inverte a segunda metade da lista
         ListNode anterior = null;
         while (lento != null) {
-            ListNode proximo = lento.proximo;
-            lento.proximo = anterior;
+            ListNode proximo = lento.next;
+            lento.next = anterior;
             anterior = lento;
             lento = proximo;
         }
@@ -60,8 +60,8 @@ public class _234_Palindrome_Linked_List {
             if (cabeca.val != anterior.val) {
                 return false;
             }
-            cabeca = cabeca.proximo;
-            anterior = anterior.proximo;
+            cabeca = cabeca.next;
+            anterior = anterior.next;
         }
 
         // Se todos os valores corresponderem, a lista é um palíndromo

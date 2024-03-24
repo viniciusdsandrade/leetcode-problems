@@ -30,20 +30,20 @@ public class _148_Sort_List {
     }
 
     public static ListNode sortList(ListNode cabeca) {
-        if (cabeca == null || cabeca.proximo == null) {
+        if (cabeca == null || cabeca.next == null) {
             return cabeca;
         }
 
         // Função para encontrar o nó do meio da lista
         ListNode obterMeio = cabeca;
         ListNode lento = cabeca, rapido = cabeca;
-        while (rapido.proximo != null && rapido.proximo.proximo != null) {
-            lento = lento.proximo;
-            rapido = rapido.proximo.proximo;
+        while (rapido.next != null && rapido.next.next != null) {
+            lento = lento.next;
+            rapido = rapido.next.next;
         }
         ListNode meio = lento;
-        ListNode proximoDoMeio = meio.proximo;
-        meio.proximo = null;
+        ListNode proximoDoMeio = meio.next;
+        meio.next = null;
 
         // Aplicar a função recursivamente para as duas metades
         ListNode esquerda = sortList(cabeca);
@@ -58,23 +58,23 @@ public class _148_Sort_List {
                     resultadoDaMesclagem = esquerda;
                     resultado = resultadoDaMesclagem;
                 } else {
-                    resultadoDaMesclagem.proximo = esquerda;
-                    resultadoDaMesclagem = resultadoDaMesclagem.proximo;
+                    resultadoDaMesclagem.next = esquerda;
+                    resultadoDaMesclagem = resultadoDaMesclagem.next;
                 }
-                esquerda = esquerda.proximo;
+                esquerda = esquerda.next;
             } else {
                 if (resultadoDaMesclagem == null) {
                     resultadoDaMesclagem = direita;
                     resultado = resultadoDaMesclagem;
                 } else {
-                    resultadoDaMesclagem.proximo = direita;
-                    resultadoDaMesclagem = resultadoDaMesclagem.proximo;
+                    resultadoDaMesclagem.next = direita;
+                    resultadoDaMesclagem = resultadoDaMesclagem.next;
                 }
-                direita = direita.proximo;
+                direita = direita.next;
             }
         }
         // Se ainda houver elementos em esquerda ou direita, anexá-los ao resultado
-        resultadoDaMesclagem.proximo = (esquerda != null) ? esquerda : direita;
+        resultadoDaMesclagem.next = (esquerda != null) ? esquerda : direita;
 
         return resultado;
     }

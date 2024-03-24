@@ -59,8 +59,8 @@ public class _237_Delete_Node_In_A_Linked_List {
     }
 
     public static void deleteNode(ListNode node) {
-        node.val = node.proximo.val;
-        node.proximo = node.proximo.proximo;
+        node.val = node.next.val;
+        node.next = node.next.next;
     }
 
     public static void testDeleteNode(ListNode node) {

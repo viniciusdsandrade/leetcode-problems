@@ -36,13 +36,13 @@ public class _61_Rotate_List {
     }
 
     public static ListNode rotateRight(ListNode head, int k) {
-        if (head == null || head.proximo == null)
+        if (head == null || head.next == null)
             return head;
 
         int length = 1;
         ListNode tail = head;
-        while (tail.proximo != null) {
-            tail = tail.proximo;
+        while (tail.next != null) {
+            tail = tail.next;
             length++;
         }
 
@@ -52,11 +52,11 @@ public class _61_Rotate_List {
 
         ListNode newTail = head;
         for (int i = 0; i < length - k - 1; i++)
-            newTail = newTail.proximo;
+            newTail = newTail.next;
 
-        ListNode newHead = newTail.proximo;
-        newTail.proximo = null;
-        tail.proximo = head;
+        ListNode newHead = newTail.next;
+        newTail.next = null;
+        tail.next = head;
 
         return newHead;
     }
