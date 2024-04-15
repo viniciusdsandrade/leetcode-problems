@@ -1,0 +1,15 @@
+C:\Users\vinic\OneDrive\Área de Trabalho\leetcode-problems\CSharp\9_linked_list\bin\Debug\net8.0\9_linked_list.exe
+C:\Users\vinic\OneDrive\Área de Trabalho\leetcode-problems\CSharp\9_linked_list\bin\Debug\net8.0\9_linked_list.deps.json
+C:\Users\vinic\OneDrive\Área de Trabalho\leetcode-problems\CSharp\9_linked_list\bin\Debug\net8.0\9_linked_list.runtimeconfig.json
+C:\Users\vinic\OneDrive\Área de Trabalho\leetcode-problems\CSharp\9_linked_list\bin\Debug\net8.0\9_linked_list.dll
+C:\Users\vinic\OneDrive\Área de Trabalho\leetcode-problems\CSharp\9_linked_list\bin\Debug\net8.0\9_linked_list.pdb
+C:\Users\vinic\OneDrive\Área de Trabalho\leetcode-problems\CSharp\9_linked_list\obj\Debug\net8.0\9_linked_list.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vinic\OneDrive\Área de Trabalho\leetcode-problems\CSharp\9_linked_list\obj\Debug\net8.0\9_linked_list.AssemblyInfoInputs.cache
+C:\Users\vinic\OneDrive\Área de Trabalho\leetcode-problems\CSharp\9_linked_list\obj\Debug\net8.0\9_linked_list.AssemblyInfo.cs
+C:\Users\vinic\OneDrive\Área de Trabalho\leetcode-problems\CSharp\9_linked_list\obj\Debug\net8.0\9_linked_list.csproj.CoreCompileInputs.cache
+C:\Users\vinic\OneDrive\Área de Trabalho\leetcode-problems\CSharp\9_linked_list\obj\Debug\net8.0\9_linked_list.sourcelink.json
+C:\Users\vinic\OneDrive\Área de Trabalho\leetcode-problems\CSharp\9_linked_list\obj\Debug\net8.0\9_linked_list.dll
+C:\Users\vinic\OneDrive\Área de Trabalho\leetcode-problems\CSharp\9_linked_list\obj\Debug\net8.0\refint\9_linked_list.dll
+C:\Users\vinic\OneDrive\Área de Trabalho\leetcode-problems\CSharp\9_linked_list\obj\Debug\net8.0\9_linked_list.pdb
+C:\Users\vinic\OneDrive\Área de Trabalho\leetcode-problems\CSharp\9_linked_list\obj\Debug\net8.0\9_linked_list.genruntimeconfig.cache
+C:\Users\vinic\OneDrive\Área de Trabalho\leetcode-problems\CSharp\9_linked_list\obj\Debug\net8.0\ref\9_linked_list.dll
