@@ -53,6 +53,7 @@ public class _21_Merge_Two_Sorted_Lists {
     }
 
     public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+
         ListNode auxiliar = new ListNode(-1);
         ListNode primeiro = auxiliar;
 
