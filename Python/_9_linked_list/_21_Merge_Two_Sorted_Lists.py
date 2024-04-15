@@ -49,6 +49,9 @@ class ListNode:
 
 
 class Solution:
+    def __init__(self):
+        pass
+
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
         if not list1: return list2
         if not list2: return list1
