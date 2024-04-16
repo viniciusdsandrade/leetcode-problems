@@ -60,6 +60,7 @@ func testMergeTwoLists(list1 *ListNode, list2 *ListNode) {
 }
 
 func main() {
+
 	list1 := &ListNode{1, &ListNode{2, &ListNode{4, nil}}}
 	list2 := &ListNode{1, &ListNode{3, &ListNode{4, nil}}}
 	testMergeTwoLists(list1, list2)
