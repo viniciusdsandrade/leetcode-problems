@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c1d46b8-5057-4424-8697-ae316a9a398f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/10_binary_tree/226_Invert_Binary_Tree.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4_arrays/1_Two_Sum.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Rust/src/_1_two_sum.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Python/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/10_binary_tree/out/production/10_binary_tree/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/10_binary_tree/out/production/10_binary_tree/TreeNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Rust/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Rust/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Rust/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../Rust/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Rust/target/.rustc_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Rust/target/.rustc_info.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,24 +42,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Ruby.21_Merge_Two_Sorted_Lists.executor": "Run",
-    "Ruby.226_Invert_Binary_Tree.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/vinic/OneDrive/Área de Trabalho/leetcode-problems/Ruby/10_binary_tree",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ruby.structure.view.model.defaults.configured": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Ruby.21_Merge_Two_Sorted_Lists.executor&quot;: &quot;Run&quot;,
+    &quot;Ruby.226_Invert_Binary_Tree.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/vinic/OneDrive/Área de Trabalho/leetcode-problems/Ruby/10_binary_tree&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\vinic\OneDrive\Área de Trabalho\leetcode-problems\Ruby\10_binary_tree" />
@@ -101,6 +95,7 @@
       <workItem from="1713160388624" duration="103000" />
       <workItem from="1713279457771" duration="16000" />
       <workItem from="1713365180035" duration="5440000" />
+      <workItem from="1713378640745" duration="18000" />
     </task>
     <servers />
   </component>
