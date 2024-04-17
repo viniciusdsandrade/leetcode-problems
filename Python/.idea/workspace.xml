@@ -5,25 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0392edb2-0f6d-4a36-85ef-456300c0f68b" name="Changes" comment="fix: remove .idea">
-      <change afterPath="$PROJECT_DIR$/_10_binary_tree/_226_Invert_Binary_Tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_4_arrays/_1_Two_Sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Go/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Go/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/10_binary_tree/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/10_binary_tree/TreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/10_binary_tree/_226_InvertBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/10_binary_tree/ShallowOrDeepCopy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/10_binary_tree/out/production/10_binary_tree/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/10_binary_tree/out/production/10_binary_tree/.idea/10_binary_tree.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/10_binary_tree/_226_Invert_Binary_Tree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/10_binary_tree/out/production/10_binary_tree/.idea/jpa-buddy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/10_binary_tree/out/production/10_binary_tree/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/10_binary_tree/out/production/10_binary_tree/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/10_binary_tree/out/production/10_binary_tree/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/10_binary_tree/out/production/10_binary_tree/TreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/10_binary_tree/out/production/10_binary_tree/Ultimate_chatGPT.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/10_binary_tree/out/production/10_binary_tree/_226_InvertBinaryTree.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ruby/10_binary_tree/226_Invert_Binary_Tree.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ruby/4_arrays/1_Two_Sum.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_9_linked_list/_21_Merge_Two_Sorted_Lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/_9_linked_list/_21_Merge_Two_Sorted_Lists.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Ruby/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ruby/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Rust/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Rust/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Rust/target/.rustc_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Rust/target/.rustc_info.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,6 +157,7 @@
       <workItem from="1713279494283" duration="2351000" />
       <workItem from="1713305778192" duration="3836000" />
       <workItem from="1713358447817" duration="1597000" />
+      <workItem from="1713365239635" duration="520000" />
     </task>
     <task id="LOCAL-00001" summary="fix: remove .idea">
       <option name="closed" value="true" />

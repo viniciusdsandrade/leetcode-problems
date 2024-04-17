@@ -7,11 +7,50 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2510dc51-192e-4de5-977f-97161dffde25" name="Changes" comment="feat: rust">
+    <list default="true" id="2510dc51-192e-4de5-977f-97161dffde25" name="Changes" comment="feat: _1_two_sum.rs">
+      <change afterPath="$PROJECT_DIR$/../Ruby/10_binary_tree/226_Invert_Binary_Tree.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ruby/4_arrays/1_Two_Sum.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_1_two_sum.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_226_invert_binary_tree.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Python/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Python/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Ruby/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ruby/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/.rustc_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/.rustc_info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/.fingerprint/Rust-7ee83d22bf571438/dep-bin-Rust" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/.fingerprint/Rust-7ee83d22bf571438/dep-bin-Rust" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/Rust.d" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/Rust.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/Rust.exe" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/Rust.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/Rust.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/Rust.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/Rust.d" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/Rust.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/Rust.exe" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/Rust.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/Rust.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/Rust.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/Rust-34a0cmsmvndvz/s-gv9g9ocai3-3rrq7v-87n0iiau4kaalg591sklpqo73/1dvqr0yugyimysav.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/Rust-34a0cmsmvndvz/s-gv9g9ocai3-3rrq7v-87n0iiau4kaalg591sklpqo73/2jp7611ubftjjcvc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/Rust-34a0cmsmvndvz/s-gv9g9ocai3-3rrq7v-87n0iiau4kaalg591sklpqo73/2kfs00osxuvdpr1a.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/Rust-34a0cmsmvndvz/s-gv9g9ocai3-3rrq7v-87n0iiau4kaalg591sklpqo73/2lj0hqgy14emdmwr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/Rust-34a0cmsmvndvz/s-gv9g9ocai3-3rrq7v-87n0iiau4kaalg591sklpqo73/2ou4gk32zhd5r9p9.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/Rust-34a0cmsmvndvz/s-gv9g9ocai3-3rrq7v-87n0iiau4kaalg591sklpqo73/2q8vjf87wfcuehz1.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/Rust-34a0cmsmvndvz/s-gv9g9ocai3-3rrq7v-87n0iiau4kaalg591sklpqo73/2tjihkgcx5vqlq0u.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/Rust-34a0cmsmvndvz/s-gv9g9ocai3-3rrq7v-87n0iiau4kaalg591sklpqo73/300sqq67fjx298bo.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/Rust-34a0cmsmvndvz/s-gv9g9ocai3-3rrq7v-87n0iiau4kaalg591sklpqo73/3782c1j73dcize9z.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/Rust-34a0cmsmvndvz/s-gv9g9ocai3-3rrq7v-87n0iiau4kaalg591sklpqo73/3832sesfhyo1dzr4.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/Rust-34a0cmsmvndvz/s-gv9g9ocai3-3rrq7v-87n0iiau4kaalg591sklpqo73/3kec8u065zw4buaj.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/Rust-34a0cmsmvndvz/s-gv9g9ocai3-3rrq7v-87n0iiau4kaalg591sklpqo73/4ujx8gku02cnjjqd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/Rust-34a0cmsmvndvz/s-gv9g9ocai3-3rrq7v-87n0iiau4kaalg591sklpqo73/4wzwgmlbwkxh8fy9.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/Rust-34a0cmsmvndvz/s-gv9g9ocai3-3rrq7v-87n0iiau4kaalg591sklpqo73/50ftxx7e5kgovljx.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/Rust-34a0cmsmvndvz/s-gv9g9ocai3-3rrq7v-87n0iiau4kaalg591sklpqo73/50oe0ch6i37e2k2e.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/Rust-34a0cmsmvndvz/s-gv9g9ocai3-3rrq7v-87n0iiau4kaalg591sklpqo73/52v95qjfsa527rwl.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/Rust-34a0cmsmvndvz/s-gv9g9ocai3-3rrq7v-87n0iiau4kaalg591sklpqo73/550kvbalrjczgd1z.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/Rust-34a0cmsmvndvz/s-gv9g9ocai3-3rrq7v-87n0iiau4kaalg591sklpqo73/59wu2hlmnqmjz1i2.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/Rust-34a0cmsmvndvz/s-gv9g9ocai3-3rrq7v-87n0iiau4kaalg591sklpqo73/77uwnvcz5bfhhdl.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/Rust-34a0cmsmvndvz/s-gv9g9ocai3-3rrq7v-87n0iiau4kaalg591sklpqo73/7x6stvi7tf5vs9e.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/Rust-34a0cmsmvndvz/s-gv9g9ocai3-3rrq7v-87n0iiau4kaalg591sklpqo73/dep-graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/Rust-34a0cmsmvndvz/s-gv9g9ocai3-3rrq7v-87n0iiau4kaalg591sklpqo73/mtdulgjoihrzlwv.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/Rust-34a0cmsmvndvz/s-gv9g9ocai3-3rrq7v-87n0iiau4kaalg591sklpqo73/q6fos08wy2xxgzh.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/Rust-34a0cmsmvndvz/s-gv9g9ocai3-3rrq7v-87n0iiau4kaalg591sklpqo73/qpwyegz05v1q9qf.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/Rust-34a0cmsmvndvz/s-gv9g9ocai3-3rrq7v-87n0iiau4kaalg591sklpqo73/query-cache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/Rust-34a0cmsmvndvz/s-gv9g9ocai3-3rrq7v-87n0iiau4kaalg591sklpqo73/work-products.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/Rust-34a0cmsmvndvz/s-gv9g9ocai3-3rrq7v.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,27 +85,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Cargo.Run Rust.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Run.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.rust.reset.selective.auto.import&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/vinic/OneDrive/Área de Trabalho/leetcode-problems/Rust&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
-    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;language.rust.cargo.check&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Cargo.Build `Run`.executor": "Run",
+    "Cargo.Run Rust.executor": "Run",
+    "Cargo.Run.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.rust.reset.selective.auto.import": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/vinic/OneDrive/Área de Trabalho/leetcode-problems/Rust",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "org.rust.first.attach.projects": "true",
+    "settings.editor.selected.configurable": "language.rust.cargo.check",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\vinic\OneDrive\Área de Trabalho\leetcode-problems\Rust\src" />
@@ -76,7 +116,7 @@
   <component name="RsExternalLinterProjectSettings">
     <option name="channel" value="dev" />
   </component>
-  <component name="RunManager" selected="Cargo.Run Rust">
+  <component name="RunManager" selected="Cargo.Run">
     <configuration name="Run Rust" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="command" value="run --package Rust --bin Rust" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -132,6 +172,8 @@
       <workItem from="1713160137410" duration="61000" />
       <workItem from="1713279490508" duration="29000" />
       <workItem from="1713279535173" duration="28000" />
+      <workItem from="1713375234089" duration="1103000" />
+      <workItem from="1713376371794" duration="1673000" />
     </task>
     <task id="LOCAL-00001" summary="feat: rust">
       <option name="closed" value="true" />

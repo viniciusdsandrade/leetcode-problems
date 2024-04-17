@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c1d46b8-5057-4424-8697-ae316a9a398f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/10_binary_tree/226_Invert_Binary_Tree.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_arrays/1_Two_Sum.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Rust/src/_1_two_sum.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Python/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Rust/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../Rust/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/.rustc_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Rust/target/.rustc_info.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,19 +52,26 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Ruby.21_Merge_Two_Sorted_Lists.executor": "Run",
+    "Ruby.226_Invert_Binary_Tree.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/vinic/OneDrive/Área de Trabalho/leetcode-problems/Ruby",
+    "last_opened_file_path": "C:/Users/vinic/OneDrive/Área de Trabalho/leetcode-problems/Ruby/10_binary_tree",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "ruby.structure.view.model.defaults.configured": "true",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vinic\OneDrive\Área de Trabalho\leetcode-problems\Ruby\10_binary_tree" />
+      <recent name="C:\Users\vinic\OneDrive\Área de Trabalho\leetcode-problems\Ruby\4_arrays" />
+    </key>
+  </component>
   <component name="RubyModuleManagerSettings">
     <option name="blackListedRootsPaths">
       <list>
@@ -86,6 +100,7 @@
       <workItem from="1713160097905" duration="113000" />
       <workItem from="1713160388624" duration="103000" />
       <workItem from="1713279457771" duration="16000" />
+      <workItem from="1713365180035" duration="5440000" />
     </task>
     <servers />
   </component>
@@ -94,8 +109,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="feat: 226_Invert_Binary_Tree.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Ruby@21_Merge_Two_Sorted_Lists.rcov" NAME="21_Merge_Two_Sorted_Lists Coverage Results" MODIFIED="1713160478252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby" />
+    <SUITE FILE_PATH="coverage/Ruby@226_Invert_Binary_Tree.rcov" NAME="226_Invert_Binary_Tree Coverage Results" MODIFIED="1713371777271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby" />
   </component>
 </project>
