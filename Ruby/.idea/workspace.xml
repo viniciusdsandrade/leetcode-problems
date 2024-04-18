@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c1d46b8-5057-4424-8697-ae316a9a398f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Java/10_binary_tree/out/production/10_binary_tree/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/10_binary_tree/out/production/10_binary_tree/TreeNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Rust/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Rust/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Go/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Go/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/10_binary_tree/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/10_binary_tree/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Python/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +97,7 @@
       <workItem from="1713279457771" duration="16000" />
       <workItem from="1713365180035" duration="5440000" />
       <workItem from="1713378640745" duration="18000" />
+      <workItem from="1713464386689" duration="250000" />
     </task>
     <servers />
   </component>

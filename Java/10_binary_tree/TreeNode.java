@@ -16,7 +16,6 @@ public class TreeNode implements Cloneable {
         this.right = right;
     }
 
-
     public TreeNode(TreeNode modelo) {
         if (modelo == null) throw new IllegalArgumentException("modelo cannot be null");
 
@@ -75,5 +74,4 @@ public class TreeNode implements Cloneable {
     private String repeatString(String str, int times) {
         return new String(new char[times]).replace("\0", str);
     }
-
 }

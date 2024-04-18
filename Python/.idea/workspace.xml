@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0392edb2-0f6d-4a36-85ef-456300c0f68b" name="Changes" comment="fix: remove .idea">
-      <change afterPath="$PROJECT_DIR$/../Ruby/10_binary_tree/226_Invert_Binary_Tree.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ruby/4_arrays/1_Two_Sum.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Go/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Go/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/10_binary_tree/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/10_binary_tree/TreeNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ruby/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ruby/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,26 +54,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Python._1_Two_Sum.executor&quot;: &quot;Run&quot;,
-    &quot;Python._21_Merge_Two_Sorted_Lists.executor&quot;: &quot;Run&quot;,
-    &quot;Python._226_Invert_Binary_Tree.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/vinic/OneDrive/Área de Trabalho/leetcode-problems/Python&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python._1_Two_Sum.executor": "Run",
+    "Python._21_Merge_Two_Sorted_Lists.executor": "Run",
+    "Python._226_Invert_Binary_Tree.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/vinic/OneDrive/Área de Trabalho/python-object-oriented-programming-expert",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Python._226_Invert_Binary_Tree">
     <configuration name="_1_Two_Sum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
@@ -158,6 +157,8 @@
       <workItem from="1713305778192" duration="3836000" />
       <workItem from="1713358447817" duration="1597000" />
       <workItem from="1713365239635" duration="520000" />
+      <workItem from="1713381878006" duration="7000" />
+      <workItem from="1713398120544" duration="54000" />
     </task>
     <task id="LOCAL-00001" summary="fix: remove .idea">
       <option name="closed" value="true" />
