@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Map;
 import java.util.Stack;
 
 public class _150_Evaluate_Reverse_Polish_Notation {
@@ -54,6 +55,73 @@ public class _150_Evaluate_Reverse_Polish_Notation {
 
         String[] tokens3 = {"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"};
         TestEvalRPN(tokens3);
+
+        String[] expression = {"2", "+", "3", "*", "4"};
+        TestEvalExpression(expression);
+
+        String[] expression2 = {"(", "2", "+", "3", ")", "*", "4"};
+        TestEvalExpression(expression2);
+    }
+
+    private static final Map<String, Integer> OPERATOR_PRECEDENCE = Map.of(
+            "+", 1,
+            "-", 1,
+            "*", 2,
+            "/", 2
+    );
+
+    public static int evalExpression(String[] tokens) {
+        Stack<String> operators = new Stack<>();
+        Stack<Integer> operands = new Stack<>();
+
+        for (String token : tokens) {
+            if (OPERATOR_PRECEDENCE.containsKey(token)) {
+                while (!operators.isEmpty() && OPERATOR_PRECEDENCE.getOrDefault(operators.peek(), 0) >= OPERATOR_PRECEDENCE.get(token)) {
+                    processAnOperator(operands, operators);
+                }
+                operators.push(token);
+            } else if (token.equals("(")) {
+                operators.push(token);
+            } else if (token.equals(")")) {
+                while (!operators.peek().equals("(")) {
+                    processAnOperator(operands, operators);
+                }
+                operators.pop();
+            } else {
+                operands.push(Integer.parseInt(token));
+            }
+        }
+        while (!operators.isEmpty()) {
+            processAnOperator(operands, operators);
+        }
+        return operands.pop();
+    }
+
+    private static void processAnOperator(Stack<Integer> operands, Stack<String> operators) {
+        int operand2 = operands.pop();
+        int operand1 = operands.pop();
+        String operator = operators.pop();
+
+        switch (operator) {
+            case "+" -> operands.push(operand1 + operand2);
+            case "-" -> operands.push(operand1 - operand2);
+            case "*" -> operands.push(operand1 * operand2);
+            case "/" -> operands.push(operand1 / operand2);
+        }
+    }
+
+
+    public static void TestEvalExpression(String[] tokens) {
+        System.out.println("\nInput: " + Arrays.toString(tokens));
+
+        long startTime = System.nanoTime();
+        int result = evalExpression(tokens);
+        long endTime = System.nanoTime();
+
+        long timeElapsed = endTime - startTime;
+
+        System.out.println("Result: " + result);
+        System.out.println("Execution time in nanoseconds: " + timeElapsed);
     }
 
     public static int evalRPN(String[] tokens) {

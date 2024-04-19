@@ -29,59 +29,52 @@ public class _148_Sort_List {
         testSortList(list3);
     }
 
-    public static ListNode sortList(ListNode cabeca) {
-        if (cabeca == null || cabeca.next == null) {
-            return cabeca;
+    public static ListNode sortList(ListNode head) {
+        if (head == null || head.next == null) return head;
+
+        ListNode middle = findMiddle(head);
+        ListNode rightHead = middle.next;
+
+        middle.next = null;
+
+        ListNode left = sortList(head);
+        ListNode right = sortList(rightHead);
+
+        return merge(left, right);
+    }
+
+    private static ListNode findMiddle(ListNode head) {
+        ListNode slow = head;
+        ListNode fast = head;
+        while (fast.next != null && fast.next.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
         }
+        return slow;
+    }
 
-        // Função para encontrar o nó do meio da lista
-        ListNode obterMeio = cabeca;
-        ListNode lento = cabeca, rapido = cabeca;
-        while (rapido.next != null && rapido.next.next != null) {
-            lento = lento.next;
-            rapido = rapido.next.next;
-        }
-        ListNode meio = lento;
-        ListNode proximoDoMeio = meio.next;
-        meio.next = null;
-
-        // Aplicar a função recursivamente para as duas metades
-        ListNode esquerda = sortList(cabeca);
-        ListNode direita = sortList(proximoDoMeio);
-
-        // Função para mesclar duas listas ordenadas
-        ListNode resultadoDaMesclagem = null;
-        ListNode resultado = resultadoDaMesclagem;
-        while (esquerda != null && direita != null) {
-            if (esquerda.val <= direita.val) {
-                if (resultadoDaMesclagem == null) {
-                    resultadoDaMesclagem = esquerda;
-                    resultado = resultadoDaMesclagem;
-                } else {
-                    resultadoDaMesclagem.next = esquerda;
-                    resultadoDaMesclagem = resultadoDaMesclagem.next;
-                }
-                esquerda = esquerda.next;
+    private static ListNode merge(ListNode left, ListNode right) {
+        ListNode dummy = new ListNode(-1);
+        ListNode current = dummy;
+        while (left != null && right != null) {
+            if (left.val < right.val) {
+                current.next = left;
+                left = left.next;
             } else {
-                if (resultadoDaMesclagem == null) {
-                    resultadoDaMesclagem = direita;
-                    resultado = resultadoDaMesclagem;
-                } else {
-                    resultadoDaMesclagem.next = direita;
-                    resultadoDaMesclagem = resultadoDaMesclagem.next;
-                }
-                direita = direita.next;
+                current.next = right;
+                right = right.next;
             }
+            current = current.next;
         }
-        // Se ainda houver elementos em esquerda ou direita, anexá-los ao resultado
-        resultadoDaMesclagem.next = (esquerda != null) ? esquerda : direita;
+        if (left != null) current.next = left;
+        if (right != null) current.next = right;
 
-        return resultado;
+        return dummy.next;
     }
 
 
     public static void testSortList(ListNode head) {
-        System.out.println("Input: " + head);
+        System.out.println("\nInput: " + head);
         long start = System.nanoTime();
         ListNode result = sortList(head);
         long end = System.nanoTime();
