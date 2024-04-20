@@ -1,6 +1,5 @@
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.Set;
 
 public class _217_ContainsDuplicate {
 
@@ -68,14 +67,28 @@ public class _217_ContainsDuplicate {
     }
 
     public static boolean containsDuplicate(int[] nums) {
-
-        Set<Integer> set = new HashSet<>();
+        HashSet<Integer> set = new HashSet<>();
 
         for (int num : nums)
-            if (!set.add(num)) return true;
+            if (!set.add(num))
+                return true;
 
         return false;
     }
+
+    public static boolean containsDuplicate2(int[] nums) {
+        int xor = 0;
+
+        // Aplicar a operação XOR em todos os elementos do array
+        for (int num : nums)
+            xor ^= num;
+
+        // Se houver uma duplicata, o resultado final do xor não será zero
+        return xor != 0;
+    }
+
+
+
 
     public static void testContainsDuplicate(int[] nums) {
 
