@@ -51,7 +51,7 @@ public class _242_ValidAnagram {
         // Verifica se todas as contagens no array são zero
         for (int n : letras)
             if (n != 0)
-               return false;
+                return false;
 
         // Se chegou até aqui, as strings são anagramas
         return true;
