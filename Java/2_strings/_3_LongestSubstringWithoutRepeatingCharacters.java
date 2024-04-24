@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import java.util.*;
 
 public class _3_LongestSubstringWithoutRepeatingCharacters {
 
@@ -39,7 +39,7 @@ public class _3_LongestSubstringWithoutRepeatingCharacters {
         testLengthOfLongestSubstring(s3);
     }
 
-    public static int lengthOfLongestSubstring(String s) {
+    public static int lengthOfLongestSubstring1(String s) {
 
         if (s.isEmpty()) return 0;
         if (s.length() == 1) return 1;
@@ -59,16 +59,79 @@ public class _3_LongestSubstringWithoutRepeatingCharacters {
         return max;
     }
 
+    public static int lengthOfLongestSubstring2(String s) {
+        if (s.isEmpty()) return 0;
+        if (s.length() == 1) return 1;
+
+        int max = 0;
+        int start = 0;
+        int[] index = new int[128];
+
+        for (int i = 0; i < s.length(); i++) {
+            start = Math.max(start, index[s.charAt(i)]);
+            max = Math.max(max, i - start + 1);
+            index[s.charAt(i)] = i + 1;
+        }
+        return max;
+    }
+
+    public static int lengthOfLongestSubstring3(String s) {
+        if (s.isEmpty()) return 0;
+        Set<Character> set = new HashSet<>();
+        int max = 0, i = 0, j = 0;
+        while (i < s.length() && j < s.length()) {
+            if (!set.contains(s.charAt(j))){
+                set.add(s.charAt(j++));
+                max = Math.max(max, j - i);
+            }
+            else {
+                set.remove(s.charAt(i++));
+            }
+        }
+        return max;
+    }
+
+    public static int lengthOfLongestSubstring4(String s) {
+        if (s.isEmpty()) return 0;
+        Map<Character, Integer> map = new HashMap<>();
+        int max = 0;
+        for (int j = 0, i = 0; j < s.length(); j++) {
+            if (map.containsKey(s.charAt(j))) {
+                i = Math.max(map.get(s.charAt(j)), i);
+            }
+            max = Math.max(max, j - i + 1);
+            map.put(s.charAt(j), j + 1);
+        }
+        return max;
+    }
+
     public static void testLengthOfLongestSubstring(String s) {
         System.out.println("Input:  " + Arrays.toString(s.toCharArray()));
 
         long start = System.nanoTime();
-        int result = lengthOfLongestSubstring(s);
+        int result = lengthOfLongestSubstring1(s);
         long end = System.nanoTime();
 
-        System.out.println("Output: " + result);
-        System.out.println("Time: " + (end - start) + " ns");
-        System.out.printf("Time: %.5f ms\n", (end - start) / 1000000.0);
+        long start2 = System.nanoTime();
+        int result2 = lengthOfLongestSubstring2(s);
+        long end2 = System.nanoTime();
+
+        long start3 = System.nanoTime();
+        int result3 = lengthOfLongestSubstring3(s);
+        long end3 = System.nanoTime();
+
+        long start4 = System.nanoTime();
+        int result4 = lengthOfLongestSubstring4(s);
+        long end4 = System.nanoTime();
+
+        System.out.println("Output1: " + result);
+        System.out.println("Output2: " + result2);
+        System.out.println("Output3: " + result3);
+        System.out.println("Output4: " + result4);
+        System.out.println("Time1: " + (end - start) + " ns");
+        System.out.println("Time2: " + (end2 - start2) + " ns");
+        System.out.println("Time3: " + (end3 - start3) + " ns");
+        System.out.println("Time4: " + (end4 - start4) + " ns");
         System.out.println();
     }
 }
