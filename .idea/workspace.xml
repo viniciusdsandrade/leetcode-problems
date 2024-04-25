@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23c97851-bcee-4d04-8235-390aeefa6e5e" name="Changes" comment="" />
+    <list default="true" id="37660bd8-bdbe-47b6-baea-892bbf52d772" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
+  "associatedIndex": 3
 }]]></component>
-  <component name="ProjectId" id="2fZOc4zsvhOr5rKF9yLRhvlEVWZ" />
+  <component name="ProjectId" id="2fZOkmNBJZyZoVCua1rfMpzn1Af" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -21,36 +24,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Kotlin._1_Two_SumKt.executor": "Run",
-    "Kotlin._21_Merge_Two_Sorted_ListsKt.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/vinic/OneDrive/Área de Trabalho/leetcode-problems/Kotlin",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Kotlin._1_Two_SumKt">
-    <configuration name="_1_Two_SumKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_9_linked_list._1_Two_SumKt" />
-      <module name="Kotlin" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_21_Merge_Two_Sorted_ListsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_9_linked_list._21_Merge_Two_Sorted_ListsKt" />
-      <module name="Kotlin" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Kotlin._1_Two_SumKt" />
-        <item itemvalue="Kotlin._21_Merge_Two_Sorted_ListsKt" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -62,16 +43,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="23c97851-bcee-4d04-8235-390aeefa6e5e" name="Changes" comment="" />
-      <created>1714005210015</created>
+      <changelist id="37660bd8-bdbe-47b6-baea-892bbf52d772" name="Changes" comment="" />
+      <created>1714005280314</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1714005210015</updated>
-      <workItem from="1714005211326" duration="42000" />
+      <updated>1714005280314</updated>
+      <workItem from="1714005280954" duration="7000" />
     </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
 </project>
