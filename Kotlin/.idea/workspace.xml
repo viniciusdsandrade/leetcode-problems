@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23c97851-bcee-4d04-8235-390aeefa6e5e" name="Changes" comment="" />
+    <list default="true" id="23c97851-bcee-4d04-8235-390aeefa6e5e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Java/2_strings/_151_Reverse_Words_In_a_String.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/2_strings/out/production/2_strings/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/2_strings/out/production/2_strings/2_strings.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/2_strings/out/production/2_strings/_1662_CheckIfTwoStringArraysAreEquivalent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/2_strings/out/production/2_strings/_X_Reverse_String_Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/2_strings/_3_LongestSubstringWithoutRepeatingCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/2_strings/_3_LongestSubstringWithoutRepeatingCharacters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/2_strings/out/production/2_strings/.idea/2_strings.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/2_strings/2_strings.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/2_strings/out/production/2_strings/.idea/git_toolbox_prj.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/2_strings/out/production/2_strings/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/2_strings/out/production/2_strings/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/2_strings/out/production/2_strings/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/2_strings/out/production/2_strings/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/2_strings/out/production/2_strings/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/2_strings/out/production/2_strings/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/2_strings/out/production/2_strings/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/2_strings/out/production/2_strings/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/2_strings/out/production/2_strings/_3_LongestSubstringWithoutRepeatingCharacters.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/2_strings/out/production/2_strings/_3_LongestSubstringWithoutRepeatingCharacters.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/2_strings/out/production/2_strings/_43_MultiplyStrings.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/2_strings/out/production/2_strings/_43_MultiplyStrings.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,21 +27,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "viniciusdsandrade"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;viniciusdsandrade&quot;
   }
-}]]></component>
+}</component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/viniciusdsandrade/data-structure-and-algorithms-in-Java.git",
-    "accountId": "5227d765-4cfb-4915-93f1-9b6486967811"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/viniciusdsandrade/data-structure-and-algorithms-in-Java.git&quot;,
+    &quot;accountId&quot;: &quot;5227d765-4cfb-4915-93f1-9b6486967811&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -40,9 +56,9 @@
     "Kotlin._1_Two_SumKt.executor": "Run",
     "Kotlin._21_Merge_Two_Sorted_ListsKt.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Merging main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/vinic/OneDrive/Área de Trabalho/leetcode-problems/Kotlin",
+    "last_opened_file_path": "C:/Users/vinic/OneDrive/Área de Trabalho/leetcode-problems",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   },
@@ -94,6 +110,7 @@
       <updated>1714005210015</updated>
       <workItem from="1714005211326" duration="42000" />
       <workItem from="1714005290609" duration="131000" />
+      <workItem from="1714005485469" duration="8000" />
     </task>
     <task id="LOCAL-00001" summary="feat: _1_Two_Sum.kt">
       <option name="closed" value="true" />
