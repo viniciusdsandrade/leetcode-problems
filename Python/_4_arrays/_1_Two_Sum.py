@@ -4,7 +4,7 @@ import time
 
 class Solution:
     @staticmethod
-    def twoSum(nums: List[int], target: int) -> List[int]:
+    def twoSum1(nums: List[int], target: int) -> List[int]:
         seen = {}
         for i, num in enumerate(nums):
             remaining = target - num
@@ -13,9 +13,8 @@ class Solution:
             seen[num] = i
         return []
 
-
     @staticmethod
-    def twoSum(nums: List[int], target: int) -> List[int]:
+    def twoSum2(nums: List[int], target: int) -> List[int]:
 
         for i in range(len(nums)):
             for j in range(i + 1, len(nums)):
@@ -23,7 +22,7 @@ class Solution:
                     return [i, j]
 
     @staticmethod
-    def twoSum(nums: List[int], target: int) -> List[int]:
+    def twoSum3(nums: List[int], target: int) -> List[int]:
         seen = {}
         for i in range(len(nums)):
             if target - nums[i] in seen:
@@ -37,13 +36,25 @@ def test_two_sum(nums: List[int], target: int) -> List[int]:
     print("\nnums: ", nums)
     print("target: ", target)
 
-    start_time = time.time()
-    result = solution.twoSum(nums, target)
-    end_time = time.time()
+    start_time_1 = time.perf_counter_ns()
+    result = solution.twoSum1(nums, target)
+    end_time_1 = time.perf_counter_ns()
 
-    runtime = end_time - start_time
+    start_time_2 = time.perf_counter_ns()
+    result = solution.twoSum2(nums, target)
+    end_time_2 = time.perf_counter_ns()
+
+    start_time_3 = time.perf_counter_ns()
+    result = solution.twoSum3(nums, target)
+    end_time_3 = time.perf_counter_ns()
+
+    runtime_1 = end_time_1 - start_time_1
+    runtime_2 = end_time_2 - start_time_2
+    runtime_3 = end_time_3 - start_time_3
     print("result:", result)
-    print(f"Runtime of the program is: {runtime}\n")
+    print(f"Runtime_1:  {runtime_1}ns")
+    print(f"Runtime_2:  {runtime_2}ns")
+    print(f"Runtime_3:  {runtime_3}ns")
 
 
 def main():

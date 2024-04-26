@@ -13,25 +13,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "viniciusdsandrade"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;viniciusdsandrade&quot;
   }
-}]]></component>
+}</component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/viniciusdsandrade/data-structure-and-algorithms-in-Java.git",
-    "accountId": "5227d765-4cfb-4915-93f1-9b6486967811"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/viniciusdsandrade/data-structure-and-algorithms-in-Java.git&quot;,
+    &quot;accountId&quot;: &quot;5227d765-4cfb-4915-93f1-9b6486967811&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 3
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2fZPO6MR4AHdBdwCw6cxAAFhSZF" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -43,7 +43,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/vinic/OneDrive/Área de Trabalho/leetcode-problems/Kotlin",
+    "last_opened_file_path": "C:/Users/vinic/OneDrive/Área de Trabalho/leetcode-problems/Java",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -65,6 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1714005596411</updated>
       <workItem from="1714005597511" duration="15000" />
+      <workItem from="1714156000083" duration="7000" />
     </task>
     <servers />
   </component>

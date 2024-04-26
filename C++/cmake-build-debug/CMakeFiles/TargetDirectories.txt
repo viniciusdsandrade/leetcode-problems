@@ -1,0 +1,3 @@
+C:/Users/vinic/OneDrive/Área de Trabalho/leetcode-problems/C++/cmake-build-debug/CMakeFiles/C__.dir
+C:/Users/vinic/OneDrive/Área de Trabalho/leetcode-problems/C++/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/vinic/OneDrive/Área de Trabalho/leetcode-problems/C++/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -5,9 +5,96 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0392edb2-0f6d-4a36-85ef-456300c0f68b" name="Changes" comment="fix: remove .idea">
-      <change beforePath="$PROJECT_DIR$/../Go/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Go/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/10_binary_tree/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/10_binary_tree/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/4_arrays/_55_Jump_Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_4_arrays/_55_Jump_Game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/out/production/data-structure-and-algorithms-in-Java/_242_ValidAnagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/out/production/data-structure-and-algorithms-in-Java/_242_ValidAnagram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/out/production/data-structure-and-algorithms-in-Java/_3_LongestSubstringWithoutRepeatingCharacters.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/out/production/data-structure-and-algorithms-in-Java/_3_LongestSubstringWithoutRepeatingCharacters.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kotlin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kotlin/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_4_arrays/_1_Two_Sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/_4_arrays/_1_Two_Sum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Rust/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/Rust.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Rust/target/debug/Rust.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/Rust.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Rust/target/debug/Rust.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/deps/Rust.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Rust/target/debug/deps/Rust.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/deps/Rust.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Rust/target/debug/deps/Rust.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/10tc4kk33n5u3h1j.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/11rkou1qsh1m4hr2.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/11xkix9zje40pz2r.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/13zvmiqziu0j360a.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/16pbjxyl0hl445a6.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/18nqxn2gujjp0dhm.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/19x6tx6333obmxtn.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/1bkpy1fwb0jz5t64.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/1dvqr0yugyimysav.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/1k30foi8u6odetxi.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/1ntj2gtky66owtnk.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/1pnm5vubx4kw3o93.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/27vsppawl4ye3ize.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/2bi18xko3qrdviq2.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/2dx6g5trlyqlqzei.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/2dxq72562k10ytz9.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/2jp7611ubftjjcvc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/2k4j0lezk7zll6ze.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/2kfs00osxuvdpr1a.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/2lj0hqgy14emdmwr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/2mx5yuggtxp8r0n2.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/2n6tah4szf0jp9vq.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/2ou4gk32zhd5r9p9.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/2q8vjf87wfcuehz1.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/2r7k255stoqclc5b.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/2rln7zghohib2yfn.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/2tctythxbppubbb0.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/2tjihkgcx5vqlq0u.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/2v6eh53k8ke2yo4o.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/300sqq67fjx298bo.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/30nn2843oua20az3.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/32az0zgcs7b74igv.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/34amwc85dgly0nr3.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/34lfms5yjk4kdg95.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/3782c1j73dcize9z.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/37vewjxbgqvvcrzd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/3832sesfhyo1dzr4.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/3bmgws34w3nyakzo.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/3f5mi4nm6smpt61i.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/3h1b045jgmp8kvti.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/3kec8u065zw4buaj.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/3kw6rc0sii9ipth5.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/3ohrvtgqfe6tivkj.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/3op7ca3lilpa3puu.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/3qt4p5843cjwh8c2.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/3toujen6n0oqfjwa.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/3trn2t6i32bgzusd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/3ywrlyofjmt4zx0e.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/405vho5satmf3rnv.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/43yqopimnigjqxkz.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/49gs80tturg2iitl.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/4ujx8gku02cnjjqd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/4wzwgmlbwkxh8fy9.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/4x5fk9dof9go05an.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/50ftxx7e5kgovljx.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/50oe0ch6i37e2k2e.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/52v95qjfsa527rwl.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/550kvbalrjczgd1z.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/580o4khe1xiutxl7.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/59wu2hlmnqmjz1i2.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/5bcr3xwywyiz5sxg.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/5eey0hirq8d2hdqy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/77uwnvcz5bfhhdl.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/7x6stvi7tf5vs9e.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/7xbiczv3mcyeqai.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/d86gjsbvxdehhk4.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/dep-graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/fuo577emst2yxgz.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/ktc6zktbroh2tih.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/mdj38fwaut2skf0.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/mtdulgjoihrzlwv.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/q6fos08wy2xxgzh.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/qo2uaj3ahjhqo5z.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/qpwyegz05v1q9qf.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/query-cache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd-c66h0ns88atifkvfoqsjz6vyh/work-products.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rust/target/debug/incremental/Rust-34a0cmsmvndvz/s-gvcb57a0gp-1v6jifd.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,10 +148,11 @@
     "Python._1_Two_Sum.executor": "Run",
     "Python._21_Merge_Two_Sorted_Lists.executor": "Run",
     "Python._226_Invert_Binary_Tree.executor": "Run",
+    "Python._55_Jump_Game.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/vinic/OneDrive/Área de Trabalho/python-object-oriented-programming-expert",
+    "last_opened_file_path": "C:/Users/vinic/OneDrive/Área de Trabalho/leetcode-problems/Python",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,7 +162,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python._226_Invert_Binary_Tree">
+  <component name="RunManager" selected="Python._55_Jump_Game">
     <configuration name="_1_Two_Sum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
@@ -121,10 +209,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="_55_Jump_Game" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_4_arrays" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_4_arrays/_55_Jump_Game.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python._226_Invert_Binary_Tree" />
+        <item itemvalue="Python._55_Jump_Game" />
         <item itemvalue="Python._1_Two_Sum" />
+        <item itemvalue="Python._226_Invert_Binary_Tree" />
       </list>
     </recent_temporary>
   </component>
@@ -159,6 +271,9 @@
       <workItem from="1713365239635" duration="520000" />
       <workItem from="1713381878006" duration="7000" />
       <workItem from="1713398120544" duration="54000" />
+      <workItem from="1714087291999" duration="400000" />
+      <workItem from="1714087928679" duration="7000" />
+      <workItem from="1714156670144" duration="2108000" />
     </task>
     <task id="LOCAL-00001" summary="fix: remove .idea">
       <option name="closed" value="true" />
@@ -189,6 +304,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Python$_21_Merge_Two_Sorted_Lists.coverage" NAME="_21_Merge_Two_Sorted_Lists Coverage Results" MODIFIED="1713142597307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_9_linked_list" />
     <SUITE FILE_PATH="coverage/Python$_226_Invert_Binary_Tree.coverage" NAME="_226_Invert_Binary_Tree Coverage Results" MODIFIED="1713308199923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_10_binary_tree" />
-    <SUITE FILE_PATH="coverage/Python$_1_Two_Sum.coverage" NAME="_1_Two_Sum Coverage Results" MODIFIED="1713280604967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_4_arrays" />
+    <SUITE FILE_PATH="coverage/Python$_55_Jump_Game.coverage" NAME="_55_Jump_Game Coverage Results" MODIFIED="1714158170182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_4_arrays" />
+    <SUITE FILE_PATH="coverage/Python$_1_Two_Sum.coverage" NAME="_1_Two_Sum Coverage Results" MODIFIED="1714157620418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_4_arrays" />
   </component>
 </project>
