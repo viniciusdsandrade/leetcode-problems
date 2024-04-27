@@ -67,9 +67,9 @@ def test_merge_two_lists(list1: Optional[ListNode], list2: Optional[ListNode]) -
     print("\nlist1: ", list1)
     print("list2: ", list2)
 
-    start_time = time.time()
+    start_time = time.perf_counter_ns()
     result = solution.mergeTwoLists(list1, list2)
-    end_time = time.time()
+    end_time = time.perf_counter_ns()
 
     runtime = end_time - start_time
     print("result:", result)

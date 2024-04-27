@@ -43,6 +43,55 @@ public class _226_Invert_Binary_Tree {
                 )
         );
         testInvertTree(root);
+
+        root = buildTree(
+                asList(1,
+                        asList(2,
+                                List.of(3),
+                                asList(4,
+                                        asList(5,
+                                                asList(6,
+                                                        asList(7,
+                                                                asList(8,
+                                                                        asList(9,
+                                                                                asList(10,
+                                                                                        asList(11,
+                                                                                                asList(12,
+                                                                                                        asList(13,
+                                                                                                                asList(14,
+                                                                                                                        List.of(15)
+                                                                                                                )
+                                                                                                        )
+                                                                                                )
+                                                                                        )
+                                                                                )
+                                                                        )
+                                                                )
+                                                        )
+                                                )
+                                        )
+                                )
+                        ),
+                        asList(5,
+                                List.of(6),
+                                asList(7,
+                                        List.of(8),
+                                        asList(9,
+                                                List.of(10),
+                                                asList(11,
+                                                        List.of(12),
+                                                        asList(13,
+                                                                List.of(14),
+                                                                List.of(15)
+                                                        )
+                                                )
+                                        )
+                                )
+                        )
+                )
+        );
+
+        testInvertTree(root);
     }
 
     public static TreeNode invertTree(TreeNode root) {
