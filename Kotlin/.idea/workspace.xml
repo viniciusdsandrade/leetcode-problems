@@ -58,7 +58,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/vinic/OneDrive/Área de Trabalho/java-data-structure/src",
+    "last_opened_file_path": "C:/Users/vinic/OneDrive/Área de Trabalho/leetcode-problems/Kotlin",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   },
@@ -113,6 +113,7 @@
       <workItem from="1714005485469" duration="8000" />
       <workItem from="1714005614877" duration="101000" />
       <workItem from="1714059410739" duration="16000" />
+      <workItem from="1714231506091" duration="93000" />
     </task>
     <task id="LOCAL-00001" summary="feat: _1_Two_Sum.kt">
       <option name="closed" value="true" />

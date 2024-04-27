@@ -1,4 +1,13 @@
 C:\Users\vinic\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/vinic/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -G Ninja -S "C:\Users\vinic\OneDrive\Área de Trabalho\leetcode-problems\C++" -B "C:\Users\vinic\OneDrive\Área de Trabalho\leetcode-problems\C++\cmake-build-debug"
--- Configuring done (0.3s)
--- Generating done (0.0s)
--- Build files have been written to: C:/Users/vinic/OneDrive/Área de Trabalho/leetcode-problems/C++/cmake-build-debug
+-- Configuring done (0.5s)
+CMake Error at CMakeLists.txt:8 (add_executable):
+  Cannot find source file:
+
+    .idea/.gitignore
+
+
+CMake Error at CMakeLists.txt:8 (add_executable):
+  No SOURCES given to target: C__
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.

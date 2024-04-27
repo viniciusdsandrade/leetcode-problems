@@ -1,7 +1,5 @@
 # ninja log v5
-8	531	7358777582402718	CMakeFiles/C__.dir/_7_Reverse_Integer.cpp.obj	d0ef2c118f43777
-533	727	7358777584326606	C__.exe	9f13e0ef074cc01a
-4	529	7358778249560582	CMakeFiles/C__.dir/_7_Reverse_Integer.cpp.obj	d0ef2c118f43777
-529	692	7358778251136661	C__.exe	9f13e0ef074cc01a
 5	510	7358778451113359	CMakeFiles/C__.dir/_7_Reverse_Integer.cpp.obj	d0ef2c118f43777
 510	655	7358778452511462	C__.exe	9f13e0ef074cc01a
+20	1184	7359343370869109	CMakeFiles/C__.dir/_7_Reverse_Integer.cpp.obj	d0ef2c118f43777
+1185	1486	7359343373835859	C__.exe	9f13e0ef074cc01a
