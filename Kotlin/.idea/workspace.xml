@@ -46,6 +46,9 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2fZOc4zsvhOr5rKF9yLRhvlEVWZ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -53,6 +56,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Kotlin._1_Two_SumKt.executor": "Run",
     "Kotlin._21_Merge_Two_Sorted_ListsKt.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -114,6 +118,7 @@
       <workItem from="1714005614877" duration="101000" />
       <workItem from="1714059410739" duration="16000" />
       <workItem from="1714231506091" duration="93000" />
+      <workItem from="1714232351140" duration="118000" />
     </task>
     <task id="LOCAL-00001" summary="feat: _1_Two_Sum.kt">
       <option name="closed" value="true" />
@@ -138,6 +143,7 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="feat: _20_Valid_Parentheses.java" />
     <MESSAGE value="feat: _1_Two_Sum.kt" />
     <option name="LAST_COMMIT_MESSAGE" value="feat: _1_Two_Sum.kt" />
