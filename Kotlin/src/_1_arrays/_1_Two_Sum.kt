@@ -1,4 +1,4 @@
-package _9_linked_list
+package _1_arrays
 
 /*
     1. Two Sum
@@ -47,6 +47,7 @@ fun twoSum(nums: IntArray, target: Int): IntArray {
 
 
 fun main() {
+
     val nums1 = intArrayOf(2, 7, 11, 15)
     val target1 = 9
     println(twoSum(nums1, target1).contentToString()) // [0, 1]

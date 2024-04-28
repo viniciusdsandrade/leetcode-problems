@@ -56,7 +56,7 @@ func testMergeTwoLists(list1 *ListNode, list2 *ListNode) {
 	elapsed := time.Since(start)
 
 	fmt.Println("Result: ", result)
-	fmt.Println("Execution time: ", elapsed)
+	fmt.Println("Execution time: ", elapsed.Nanoseconds())
 }
 
 func main() {

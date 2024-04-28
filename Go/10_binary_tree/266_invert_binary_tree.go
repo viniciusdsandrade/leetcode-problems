@@ -53,7 +53,7 @@ func testInvertTree(tree *TreeNode) {
 
 	fmt.Println("\nÁrvore invertida:")
 	fmt.Println(inverted.toString("    ", 0))
-	fmt.Println("Execution time: ", elapsed)
+	fmt.Println("Execution time: ", elapsed.Nanoseconds())
 }
 
 func main() {
