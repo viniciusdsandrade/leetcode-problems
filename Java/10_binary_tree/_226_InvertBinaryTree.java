@@ -2,7 +2,7 @@ import java.util.List;
 
 import static java.util.Arrays.asList;
 
-public class _226_Invert_Binary_Tree {
+public class _226_InvertBinaryTree {
     public static void main(String[] args) {
 
         // Test 1
