@@ -59,7 +59,7 @@ fun mergeTwoLists(list1: ListNode?, list2: ListNode?): ListNode? {
 }
 
 fun testMergeTwoLists(list1: ListNode?, list2: ListNode?) {
-    println("list1: $list1")
+    println("\nlist1: $list1")
     println("list2: $list2")
 
     val inicio = System.nanoTime()
