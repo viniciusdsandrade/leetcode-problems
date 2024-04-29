@@ -53,12 +53,13 @@
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Application._150_Evaluate_Reverse_Polish_Notation.executor&quot;: &quot;Run&quot;,
     &quot;Application._20_ValidParentheses.executor&quot;: &quot;Run&quot;,
+    &quot;Application._20_Valid_Parentheses.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/vinic/OneDrive/Área de Trabalho/leetcode-problems/Java/9_linked_list&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/vinic/OneDrive/Área de Trabalho/leetcode-problems/Java/6_stacks_and_queues&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -74,7 +75,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Application._20_Valid_Parentheses">
+  <component name="RunManager" selected="Application._232_Implement_Queue_Using_Stacks">
     <configuration name="_150_Evaluate_Reverse_Polish_Notation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_150_Evaluate_Reverse_Polish_Notation" />
       <module name="6_stacks_and_queues" />
@@ -89,8 +90,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_232_Implement_Queue_Using_Stacks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_232_Implement_Queue_Using_Stacks" />
+      <module name="6_stacks_and_queues" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._232_Implement_Queue_Using_Stacks" />
         <item itemvalue="Application._20_Valid_Parentheses" />
         <item itemvalue="Application._150_Evaluate_Reverse_Polish_Notation" />
       </list>
@@ -117,6 +126,10 @@
       <workItem from="1708221370005" duration="9000" />
       <workItem from="1713471871174" duration="4110000" />
       <workItem from="1713486465289" duration="48000" />
+      <workItem from="1713731306277" duration="1938000" />
+      <workItem from="1713806928133" duration="1000" />
+      <workItem from="1713902217976" duration="37000" />
+      <workItem from="1714419955975" duration="1018000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 150_Evaluate_Reverse_Polish_Notation.java">
       <option name="closed" value="true" />
@@ -126,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713474279718</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: _20_Valid_Parentheses.java">
+      <option name="closed" value="true" />
+      <created>1713734508965</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713734508965</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +169,7 @@
     <MESSAGE value="feat: LeetCode 412 - FizzBuzz" />
     <MESSAGE value="feat: 226_invert_binary_tree.go" />
     <MESSAGE value="feat: 150_Evaluate_Reverse_Polish_Notation.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 150_Evaluate_Reverse_Polish_Notation.java" />
+    <MESSAGE value="feat: _20_Valid_Parentheses.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: _20_Valid_Parentheses.java" />
   </component>
 </project>
