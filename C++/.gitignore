@@ -1,5 +1,5 @@
 .idea
 CMakeLists.txt
-cmake-build-debug
+\cmake-build-debug
 _7_Reverse_Integer.exe
 _83_Remove_Duplicates_From_Sorted_List.exe

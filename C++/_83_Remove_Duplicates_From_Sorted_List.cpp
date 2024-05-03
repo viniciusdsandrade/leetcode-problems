@@ -91,9 +91,7 @@ public:
 
 
 void testDeleteDuplicates(ListNode *head) {
-
     try {
-
         cout << "\nInput: ";
         Solution::printLinkedList(head);
 
@@ -126,5 +124,3 @@ int main() {
 
     return 0;
 }
-
-
