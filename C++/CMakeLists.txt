@@ -7,4 +7,5 @@ include_directories(.)
 
 add_executable(C__
         _7_Reverse_Integer.cpp
+        _83_Remove_Duplicates_From_Sorted_List.cpp
 )
