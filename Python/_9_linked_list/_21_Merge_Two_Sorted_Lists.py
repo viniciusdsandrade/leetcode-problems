@@ -2,25 +2,6 @@ import time
 from typing import Optional
 
 
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
-
-    def __str__(self):
-        if self is None:
-            return "[]"
-        result = "["
-        node = self
-        while node is not None:
-            result += str(node.val)
-            if node.next is not None:
-                result += " -> "
-            node = node.next
-        result += "]"
-        return result
-
-
 #     21. Merge Two Sorted Lists
 #     You are given the heads of two sorted linked lists list1 and list2.
 #
@@ -46,6 +27,24 @@ class ListNode:
 #     -100 <= Node.val <= 100
 #     Both list1 and list2 are sorted in non-decreasing order.
 #      */
+
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+    def __str__(self):
+        if self is None:
+            return "[]"
+        result = "["
+        node = self
+        while node is not None:
+            result += str(node.val)
+            if node.next is not None:
+                result += " -> "
+            node = node.next
+        result += "]"
+        return result
 
 
 class Solution:
