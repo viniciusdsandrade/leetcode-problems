@@ -12,11 +12,12 @@ public class ShallowOrDeepCopy {
      *
      * @param data The object to be verified and copied.
      * @return If {@code data} is {@link Cloneable}, a deep copy of {@code data}.
-     * Otherwise, the original {@code data}.
+     *         Otherwise, the original {@code data}.
      */
     public static Object verifyAndCopy(Object data) {
-        if (data instanceof Cloneable) return deepCopy(data);
-        else return data;
+        if (data instanceof Cloneable)
+            return deepCopy(data);
+        return data;
     }
 
     /**
@@ -33,7 +34,7 @@ public class ShallowOrDeepCopy {
         } catch (InvocationTargetException |
                  NoSuchMethodException |
                  IllegalAccessException ignored) {
+            return data;
         }
-        return null;
     }
 }

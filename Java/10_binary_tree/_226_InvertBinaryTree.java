@@ -6,7 +6,7 @@ public class _226_InvertBinaryTree {
     public static void main(String[] args) {
 
         // Test 1
-        TreeNode root = buildTree(
+        TreeNode root = TreeNode.buildTree(
                 asList(4,
                         asList(2,
                                 List.of(1),
@@ -21,7 +21,7 @@ public class _226_InvertBinaryTree {
         testInvertTree(root);
 
         // Test 2
-        root = buildTree(
+        root = TreeNode.buildTree(
                 asList(2,
                         List.of(1),
                         List.of(3)
@@ -30,7 +30,7 @@ public class _226_InvertBinaryTree {
         testInvertTree(root);
 
         // Test 3
-        root = buildTree(
+        root = TreeNode.buildTree(
                 asList(1,
                         asList(2,
                                 List.of(3),
@@ -44,7 +44,7 @@ public class _226_InvertBinaryTree {
         );
         testInvertTree(root);
 
-        root = buildTree(
+        root = TreeNode.buildTree(
                 asList(1,
                         asList(2,
                                 List.of(3),
@@ -118,20 +118,5 @@ public class _226_InvertBinaryTree {
         System.out.println("\nárvore invertida:");
         System.out.println(result);
         System.out.println("Execution time: " + (end - start) + "ns");
-    }
-
-    @SuppressWarnings("unchecked")
-    public static TreeNode buildTree(List<Object> nodes) {
-        if (nodes == null || nodes.isEmpty()) return null;
-
-        TreeNode root = new TreeNode((Integer) nodes.get(0));
-
-        if (nodes.size() > 1)
-            root.left = buildTree((List<Object>) nodes.get(1));
-
-        if (nodes.size() > 2)
-            root.right = buildTree((List<Object>) nodes.get(2));
-
-        return root;
     }
 }
