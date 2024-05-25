@@ -36,16 +36,12 @@ public class _405_ConvertANumberToHexadecimal {
      * @return A representação hexadecimal do número, em minúsculas.
      */
     public static String toHex(int num) {
-        // Se o número for 0, retorne "0" diretamente.
         if (num == 0) return "0";
 
         // Define um array de caracteres com os dígitos hexadecimais.
         char[] hex = "0123456789abcdef".toCharArray();
-
-        // Inicializa um StringBuilder para construir a string hexadecimal.
         StringBuilder sb = new StringBuilder();
 
-        // Loop enquanto o número não for zero.
         while (num != 0) {
             // Obtém o dígito hexadecimal menos significativo (últimos 4 bits).
             // Insere o dígito no início do StringBuilder.
@@ -55,7 +51,6 @@ public class _405_ConvertANumberToHexadecimal {
             num >>>= 4;
         }
 
-        // Retorna a string hexadecimal construída.
         return sb.toString();
     }
 
