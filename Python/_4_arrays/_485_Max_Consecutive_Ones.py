@@ -39,8 +39,8 @@ class Solution:
     # Exemplo: [1,1,1,2,3,4,5,5,5,5,5] -> 5, 5
     @staticmethod
     def findMaxConsecutiveOnes2(nums: List[int]) -> (int, int):
-        if not nums:  # Se a lista 'nums' estiver vazia:
-            return 0, None  # Retorna 0 (contagem) e None (valor)
+        # Se a lista 'nums' estiver vazia: Retorna 0 (contagem) e None (valor)
+        if not nums: return 0, None
 
         max_count = 0  # Inicializa a contagem máxima de elementos consecutivos como 0
         count = 0  # Inicializa a contagem atual de elementos consecutivos como 0
