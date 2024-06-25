@@ -22,8 +22,8 @@ public class TreeNode implements Cloneable {
         if (modelo == null) throw new IllegalArgumentException("modelo cannot be null");
 
         this.val = modelo.val;
-        this.left = modelo.left == null ? null : (TreeNode) ShallowOrDeepCopy.verifyAndCopy(modelo.left);
-        this.right = modelo.right == null ? null : (TreeNode) ShallowOrDeepCopy.verifyAndCopy(modelo.right);
+        this.left = modelo.left == null ? null : (TreeNode) ShallowOrDeepCopy2.verifyAndCopy(modelo.left);
+        this.right = modelo.right == null ? null : (TreeNode) ShallowOrDeepCopy2.verifyAndCopy(modelo.right);
     }
 
     @SuppressWarnings("unchecked")

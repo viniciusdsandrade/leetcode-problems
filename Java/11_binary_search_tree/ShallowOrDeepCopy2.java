@@ -5,7 +5,7 @@ import java.lang.reflect.Method;
  * The {@code ShallowOrDeepCopy} class provides methods for verifying and creating deep copies of objects.
  * It handles both shallow and deep copying based on the object's properties.
  */
-public class ShallowOrDeepCopy {
+public class ShallowOrDeepCopy2 {
 
     /**
      * Verifies if the input object is {@link Cloneable} and returns a deep copy if possible.
