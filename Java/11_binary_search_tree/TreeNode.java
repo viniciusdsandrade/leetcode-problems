@@ -29,7 +29,6 @@ public class TreeNode implements Cloneable {
 
     public static TreeNode buildTree(List<?> nodes) {
         if (nodes == null || nodes.isEmpty()) return null;
-
         return buildTreeRecursive(nodes, 0);
     }
 
@@ -37,6 +36,7 @@ public class TreeNode implements Cloneable {
         if (index >= nodes.size() || nodes.get(index) == null) return null;
 
         TreeNode node = new TreeNode((Integer) nodes.get(index));
+
         node.left = buildTreeRecursive(nodes, 2 * index + 1);
         node.right = buildTreeRecursive(nodes, 2 * index + 2);
 
@@ -61,10 +61,10 @@ public class TreeNode implements Cloneable {
 
         TreeNode other = (TreeNode) obj;
 
-        if (val != other.val) return false;
+        if (this.val != other.val) return false;
 
-        return (Objects.equals(left, other.left)) &&
-                (Objects.equals(right, other.right));
+        return (Objects.equals(this.left, other.left)) &&
+                (Objects.equals(this.right, other.right));
     }
 
     @Override
@@ -73,8 +73,8 @@ public class TreeNode implements Cloneable {
         int hash = 1;
 
         hash *= prime + val;
-        hash *= prime + (left == null ? 0 : left.hashCode());
-        hash *= prime + (right == null ? 0 : right.hashCode());
+        hash *= prime + (this.left == null ? 0 : left.hashCode());
+        hash *= prime + (this.right == null ? 0 : right.hashCode());
 
         if (hash < 0) hash = ~hash;
 
