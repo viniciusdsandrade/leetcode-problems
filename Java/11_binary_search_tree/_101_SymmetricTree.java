@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class _101_SymmetricTree {
@@ -21,25 +22,11 @@ public class _101_SymmetricTree {
      */
 
     public static void main(String[] args) {
-        List<Integer> nodes1 = new ArrayList<>();
-        nodes1.add(1);
-        nodes1.add(2);
-        nodes1.add(2);
-        nodes1.add(3);
-        nodes1.add(4);
-        nodes1.add(4);
-        nodes1.add(3);
+        List<Integer> nodes1 = new ArrayList<>(Arrays.asList(1, 2, 2, 3, 4, 4, 3));
         TreeNode root1 = TreeNode.buildTree(nodes1);
         testIsSymmetric(root1);
 
-        List<Integer> nodes2 = new ArrayList<>();
-        nodes2.add(1);
-        nodes2.add(2);
-        nodes2.add(2);
-        nodes2.add(null);
-        nodes2.add(3);
-        nodes2.add(null);
-        nodes2.add(3);
+        List<Integer> nodes2 = new ArrayList<>(Arrays.asList(1, 2, 2, null, 3, null, 3));
         TreeNode root2 = TreeNode.buildTree(nodes2);
         testIsSymmetric(root2);
     }
