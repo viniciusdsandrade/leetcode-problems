@@ -34,7 +34,6 @@ public class _1351_CountNegativeNumbersInASortedMatrix {
      */
 
     public static void main(String[] args) {
-
         int[][] grid1 = {
                 {4, 3, 2, -1},
                 {3, 2, 1, -1},
