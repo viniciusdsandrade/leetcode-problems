@@ -23,9 +23,10 @@ public class _700_SearchInABinarySearchTree {
 
     public static void main(String[] args) {
         List<Object> nodes = List.of(1, 2, 3, 4, 5, 6, 7);
-        TreeNode root0 = TreeNode.buildTree(nodes.stream().flatMap(o ->
-                o instanceof List ? ((List<?>) o).stream() : Stream.of(o)
-        ).toList());
+        TreeNode root0 = TreeNode.buildTree(nodes
+                .stream()
+                .flatMap(o -> o instanceof List ? ((List<?>) o).stream() : Stream.of(o)
+                ).toList());
         System.out.println(root0);
 
 

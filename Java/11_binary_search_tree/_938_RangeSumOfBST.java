@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class _938_RangeSumOfBST {
@@ -27,30 +28,13 @@ public class _938_RangeSumOfBST {
 
     public static void main(String[] args) {
 
-        List<Integer> nodes1 = new ArrayList<>();
-        nodes1.add(10);
-        nodes1.add(5);
-        nodes1.add(15);
-        nodes1.add(3);
-        nodes1.add(7);
-        nodes1.add(null);
-        nodes1.add(18);
+        List<Integer> nodes1 = Arrays.asList(10, 5, 15, 3, 7, null, 18);
         TreeNode root1 = TreeNode.buildTree(nodes1);
         var low1 = 7;
         var high1 = 15;
         testRangeSumBST(root1, low1, high1);
 
-        List<Integer> nodes2 = new ArrayList<>();
-        nodes2.add(10);
-        nodes2.add(5);
-        nodes2.add(15);
-        nodes2.add(3);
-        nodes2.add(7);
-        nodes2.add(13);
-        nodes2.add(18);
-        nodes2.add(1);
-        nodes2.add(null);
-        nodes2.add(6);
+        List<Integer> nodes2 = Arrays.asList(10, 5, 15, 3, 7, 13, 18, 1, null, 6);
         TreeNode root2 = TreeNode.buildTree(nodes2);
         var low2 = 6;
         var high2 = 10;

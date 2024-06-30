@@ -35,12 +35,17 @@ public class _2236_RootEqualsSumOfChildren {
         testCheckTree(tree2);
     }
 
+    /**
+     * Verifica se o valor do nó raiz é igual à soma dos valores de seus dois filhos.
+     *
+     * @param root o nó raiz da árvore binária, que consiste exatamente de 3 nós: o raiz, seu filho à esquerda e seu filho à direita.
+     * @return true se o valor do nó raiz for igual à soma dos valores de seus dois filhos; caso contrário, false.
+     */
     public static boolean checkTree(TreeNode root) {
         return root.val == (root.left.val + root.right.val);
     }
 
     public static void testCheckTree(TreeNode root) {
-
         System.out.println("Input: root = " + root);
 
         long start = System.nanoTime();

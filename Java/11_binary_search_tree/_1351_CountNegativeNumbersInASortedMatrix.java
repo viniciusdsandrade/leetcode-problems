@@ -70,7 +70,6 @@ public class _1351_CountNegativeNumbersInASortedMatrix {
                 }
             }
         }
-
         return count; // Retorna o número total de elementos negativos
     }
 
