@@ -94,6 +94,16 @@ public class _226_InvertBinaryTree {
         testInvertTree(root);
     }
 
+    /**
+     * Inverte uma árvore binária, trocando os filhos esquerdo e direito de todos os nós.
+     *
+     * <p>Esta função utiliza um algoritmo recursivo para percorrer a árvore binária e inverter
+     * os nós. Se a árvore estiver vazia (nulo), retorna nulo. Caso contrário, troca os filhos
+     * esquerdo e direito de cada nó e aplica a mesma operação recursivamente para cada filho.</p>
+     *
+     * @param root a raiz da árvore binária a ser invertida
+     * @return a raiz da árvore binária invertida
+     */
     public static TreeNode invertTree(TreeNode root) {
         if (root == null) return null;
 

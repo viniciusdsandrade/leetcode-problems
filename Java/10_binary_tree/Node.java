@@ -78,7 +78,7 @@ public class Node<X extends Comparable<X>> implements Cloneable, Comparable<Node
      */
     @SuppressWarnings("unchecked")
     public X getValor() {
-        return (X) ShallowOrDeepCopy2.verifyAndCopy(info);
+        return (X) ShallowOrDeepCopy.verifyAndCopy(info);
     }
 
     /**
@@ -204,7 +204,7 @@ public class Node<X extends Comparable<X>> implements Cloneable, Comparable<Node
     public Node(Node<X> modelo) {
         if (modelo == null) throw new IllegalArgumentException("Modelo nulo");
 
-        this.info = (X) ShallowOrDeepCopy2.verifyAndCopy(modelo.getValor());
+        this.info = (X) ShallowOrDeepCopy.verifyAndCopy(modelo.getValor());
 
         if (modelo.esq != null)
             this.esq = new Node<>(modelo.esq);
