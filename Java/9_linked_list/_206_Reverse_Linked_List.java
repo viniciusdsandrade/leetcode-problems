@@ -24,7 +24,6 @@ public class _206_Reverse_Linked_List {
      */
 
     public static void main(String[] args) {
-
         ListNode head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
         testReverseList(head);
 
@@ -35,23 +34,31 @@ public class _206_Reverse_Linked_List {
         testReverseList(head);
     }
 
+    /**
+     * Inverte a lista ligada dada.
+     *
+     * @param cabeca a cabeça da lista ligada a ser invertida
+     * @return a nova cabeça da lista ligada invertida
+     */
     public static ListNode reverseList(ListNode cabeca) {
-        ListNode anterior = null;
-        ListNode atual = cabeca;
-        ListNode proximo;
 
+        ListNode anterior = null; // Declaração do nó anterior como null, pois a nova cauda da lista apontará para null
+        ListNode atual = cabeca; // O nó atual é iniciado na cabeça da lista original
+        ListNode proximo; // O nó próximo é usado para armazenar temporariamente o próximo nó na iteração
+
+        // Percorre a lista até que o nó atual seja null
         while (atual != null) {
-            proximo = atual.next;
-            atual.next = anterior;
-            anterior = atual;
-            atual = proximo;
+            proximo = atual.next; // Armazena o próximo nó
+            atual.next = anterior; // Inverte o ponteiro do nó atual para apontar para o nó anterior
+            anterior = atual;  // Avança o nó anterior para o nó atual
+            atual = proximo; // Avança o nó atual para o próximo nó
         }
 
+        // Retorna o novo cabeça da lista, que é o nó anterior
         return anterior;
     }
 
     public static void testReverseList(ListNode head) {
-
         System.out.println("\nInput:  " + (head));
 
         long start = System.nanoTime();
