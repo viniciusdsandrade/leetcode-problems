@@ -1,5 +1,3 @@
-import java.util.stream.IntStream;
-
 public class _2413_SmallestEvenMultiple {
 
     /*
@@ -22,7 +20,14 @@ public class _2413_SmallestEvenMultiple {
 
     // MMC: Mínimo Múltiplo Comum
     public static void main(String[] args) {
-        IntStream.range(2, 200).forEach(_2413_SmallestEvenMultiple::testSmallestEvenMultiple);
+        for (int i = 2; i < 200; i++)
+            testSmallestEvenMultiple(i);
+
+        for (int i = 2; i < 200; i++){
+            for (int j = 2; j < 200; j++){
+                System.out.println("MMC(" + i + ", " + j + ") = " + mmc(i, j));
+            }
+        }
     }
 
     /**
@@ -36,6 +41,26 @@ public class _2413_SmallestEvenMultiple {
      */
     public static int smallestEvenMultiple(int n) {
         return (n % 2 == 0) ? n : 2 * n;
+    }
+
+    /**
+     * Calcula o mínimo múltiplo comum (MMC) de dois inteiros.
+     * <p>
+     * O MMC é calculado usando a fórmula: (a * b) / MDC(a, b)
+     * onde o MDC é calculado usando o algoritmo de Euclides.
+     *
+     * @param a o primeiro inteiro
+     * @param b o segundo inteiro
+     * @return o mínimo múltiplo comum dos dois inteiros fornecidos
+     */
+    public static int mmc(int a, int b) {
+        if (a == 0 || b == 0) return 0;
+        return (a * b) / mdc(a, b);
+    }
+
+    public static int mdc(int a, int b) {
+        if (b == 0) return a;
+        return mdc(b, a % b);
     }
 
     public static void testSmallestEvenMultiple(int n) {
