@@ -34,13 +34,11 @@ public class _231_PowerOfTwo {
     }
 
     public static boolean isPowerOfTwo(int n) {
-
         if (n <= 0) return false;
 
         while (n > 1) {
-            if (n % 2 != 0) {
+            if (n % 2 != 0)
                 return false;
-            }
             n = n / 2;
         }
         return true;
@@ -48,15 +46,13 @@ public class _231_PowerOfTwo {
 
     private static void testIsPowerOfTwo(int i) {
         System.out.printf("Input: %d\n", i);
+
         long startTime = System.nanoTime();
         boolean answer = isPowerOfTwo(i);
         long endTime = System.nanoTime();
+
         System.out.printf("Answer: %b\n", answer);
         System.out.println("Execution time: " + (endTime - startTime) + " ns");
         System.out.printf("Execution time: %.5f ms\n", (endTime - startTime) / 1000000.0);
-
-
     }
-
-
 }
