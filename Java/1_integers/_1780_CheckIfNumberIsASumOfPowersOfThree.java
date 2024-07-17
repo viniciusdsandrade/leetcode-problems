@@ -32,28 +32,28 @@ public class _1780_CheckIfNumberIsASumOfPowersOfThree {
         testCheckPowersOfThree(21);
     }
 
-    /**
-     * Verifica se um determinado inteiro pode ser representado como uma soma de potências distintas de 3.
-     *<p>
-     * Este metodo aproveita as propriedades da representação ternária (base-3). Qualquer número que pode ser formado
-     * usando potências únicas de 3 não terá resto 2 quando dividido por 3. Isso ocorre porque:
-     * - Potências de 3 (1, 3, 9, 27...) sempre deixam resto 1 quando divididas por 3.
-     * - Usar uma potência de 3 duas vezes exigiria um "2" em sua representação ternária.
-     *</p>
-     * @param n O inteiro a ser verificado.
-     * @return {@code true} se o inteiro puder ser representado como uma soma de potências distintas de 3,
-     *         {@code false} caso contrário.
-     */
-    public static boolean checkPowersOfThree(int n) {
-        // Itera enquanto n for maior que 0.
-        while (n > 0) {
-            if (n % 3 == 2)
-                return false;
-            n = n / 3;
-        }
+        /**
+         * Verifica se um determinado inteiro pode ser representado como uma soma de potências distintas de 3.
+         *<p>
+         * Este metodo aproveita as propriedades da representação ternária (base-3). Qualquer número que pode ser formado
+         * usando potências únicas de 3 não terá resto 2 quando dividido por 3. Isso ocorre porque:
+         * - Potências de 3 (1, 3, 9, 27...) sempre deixam resto 1 quando divididas por 3.
+         * - Usar uma potência de 3 duas vezes exigiria um "2" em sua representação ternária.
+         *</p>
+         * @param n O inteiro a ser verificado.
+         * @return {@code true} se o inteiro puder ser representado como uma soma de potências distintas de 3,
+         *         {@code false} caso contrário.
+         */
+        public static boolean checkPowersOfThree(int n) {
+            // Itera enquanto n for maior que 0.
+            while (n > 0) {
+                if (n % 3 == 2)
+                    return false;
+                n = n / 3;
+            }
 
-        return true;
-    }
+            return true;
+        }
 
     public static void testCheckPowersOfThree(int n) {
         System.out.println("\nInput: n = " + n);
