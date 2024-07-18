@@ -41,10 +41,19 @@ public class _700_SearchInABinarySearchTree {
         testeSearchBST(root2, val2);
     }
 
+    /**
+     * Busca um nó em uma árvore binária de busca (BST) que contém um valor específico.
+     *
+     * @param root a raiz da árvore binária de busca
+     * @param val o valor a ser buscado na árvore
+     * @return o nó que contém o valor especificado, ou null se o valor não for encontrado
+     */
     static TreeNode searchBST(TreeNode root, int val) {
-        if (root == null) return null;
-        if (root.val == val) return root;
-        if (root.val > val) return searchBST(root.left, val);
+        if (root == null) return null;    // Se o nó atual é null, retornamos null, indicando que não encontramos o valor
+        if (root.val == val) return root; // Se o valor do nó atual é igual ao valor buscado, retornamos este nó
+        if (root.val > val) return searchBST(root.left, val); // Se o valor do nó atual é maior que o valor buscado, buscamos na subárvore esquerda
+
+        // Se o valor do nó atual é menor que o valor buscado, buscamos na subárvore direita
         return searchBST(root.right, val);
     }
 
