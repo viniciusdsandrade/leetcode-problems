@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb2245a4-7d64-4015-900a-46a5c823d56d" name="Changes" comment="" />
+    <list default="true" id="3f1de185-2890-405d-b022-a0ec1745b3f0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,14 +20,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="GitToolBoxStore">
-    <option name="projectConfigVersion" value="5" />
-  </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 8
+  "associatedIndex": 6
 }]]></component>
-  <component name="ProjectId" id="2cECJhuOjWNqewhlnK8hwT55kA9" />
+  <component name="ProjectId" id="2jiFvXvgjTvcsywoSdepPEv4hdt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -32,22 +34,23 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application._3024_1_TypeOfTriangleII.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "Application._1528_ShuffleString.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/vinic/OneDrive/Área de Trabalho/leetcode-problems/Java/4_arrays",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="_3024_1_TypeOfTriangleII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_3024_1_TypeOfTriangleII" />
+    <configuration name="_1528_ShuffleString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_1528_ShuffleString" />
       <module name="4_arrays" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -55,27 +58,27 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application._3024_1_TypeOfTriangleII" />
+        <item itemvalue="Application._1528_ShuffleString" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.1-openjdk-21.0.1-3183f394aec4-7d648f2c" />
-        <option value="jdk-21.0.2-openjdk-21.0.2-f644763e9732-c0c073db" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="eb2245a4-7d64-4015-900a-46a5c823d56d" name="Changes" comment="" />
-      <created>1707667282300</created>
+      <changelist id="3f1de185-2890-405d-b022-a0ec1745b3f0" name="Changes" comment="" />
+      <created>1721862222405</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1707667282300</updated>
-      <workItem from="1707667284069" duration="322000" />
+      <updated>1721862222405</updated>
+      <workItem from="1721862223419" duration="1249000" />
     </task>
     <servers />
   </component>
