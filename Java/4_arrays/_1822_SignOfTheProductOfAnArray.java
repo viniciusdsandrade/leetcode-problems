@@ -45,14 +45,24 @@ public class _1822_SignOfTheProductOfAnArray {
         testArraySign(nums3);
     }
 
+    /**
+     * Calcula o sinal do produto de um array de inteiros.
+     *
+     * <p>Este metodo retorna 1 se o produto de todos os elementos do array for positivo,
+     * -1 se o produto for negativo e 0 se qualquer elemento do array for 0.</p>
+     *
+     * @param nums um array de inteiros
+     * @return 1 se o produto de todos os elementos for positivo,
+     *         -1 se o produto for negativo,
+     *         ou 0 se qualquer elemento for 0
+     */
     public static int arraySign(int[] nums) {
-        int product = 1;
-        for (int i = 0; i < nums.length; i++) {
-            int num = nums[i];
+        int negativeCount = 0;
+        for (int num : nums) {
             if (num == 0) return 0;
-            product *= num;
+            if (num < 0) negativeCount++;
         }
-        return product > 0 ? 1 : -1;
+        return (negativeCount % 2 == 0) ? 1 : -1;
     }
 
     public static void testArraySign(int[] nums) {
