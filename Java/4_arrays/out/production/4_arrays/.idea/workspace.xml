@@ -49,11 +49,12 @@
   &quot;keyToString&quot;: {
     &quot;Application._1528_ShuffleString.executor&quot;: &quot;Run&quot;,
     &quot;Application._1822_SignOfTheProductOfAnArray.executor&quot;: &quot;Run&quot;,
+    &quot;Application._268_MissingNumber.executor&quot;: &quot;Run&quot;,
     &quot;Application._2798_NumberOfEmployeesWhoMetTheTarget.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/vinic/OneDrive/Área de Trabalho/leetcode-problems/Java/11_binary_search_tree&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/vinic/OneDrive/Área de Trabalho/leetcode-problems/Java/4_arrays&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -70,7 +71,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Application._2798_NumberOfEmployeesWhoMetTheTarget">
+  <component name="RunManager" selected="Application._53_MaximumSubarray">
     <configuration name="_1528_ShuffleString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_1528_ShuffleString" />
       <module name="4_arrays" />
@@ -92,8 +93,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_53_MaximumSubarray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_53_MaximumSubarray" />
+      <module name="4_arrays" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._53_MaximumSubarray" />
         <item itemvalue="Application._2798_NumberOfEmployeesWhoMetTheTarget" />
         <item itemvalue="Application._1822_SignOfTheProductOfAnArray" />
         <item itemvalue="Application._1528_ShuffleString" />
@@ -127,7 +136,12 @@
       <workItem from="1722880841450" duration="118000" />
       <workItem from="1722885883694" duration="291000" />
       <workItem from="1724593477032" duration="1044000" />
-      <workItem from="1726791234068" duration="655000" />
+      <workItem from="1726791234068" duration="1658000" />
+      <workItem from="1726874050983" duration="17000" />
+      <workItem from="1726874080711" duration="48000" />
+      <workItem from="1727016233516" duration="847000" />
+      <workItem from="1727022011330" duration="48000" />
+      <workItem from="1727127774305" duration="1073000" />
     </task>
     <task id="LOCAL-00001" summary="feat: _1528_ShuffleString.java">
       <option name="closed" value="true" />
@@ -153,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724594178579</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: _268_MissingNumber.java">
+      <option name="closed" value="true" />
+      <created>1726792714946</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726792714946</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +196,7 @@
     <MESSAGE value="feat: _1528_ShuffleString.java" />
     <MESSAGE value="feat: _1822_SignOfTheProductOfAnArray.java" />
     <MESSAGE value="feat: _2798_NumberOfEmployeesWhoMetTheTarget.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: _2798_NumberOfEmployeesWhoMetTheTarget.java" />
+    <MESSAGE value="feat: _268_MissingNumber.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: _268_MissingNumber.java" />
   </component>
 </project>

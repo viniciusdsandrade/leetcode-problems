@@ -43,15 +43,40 @@ public class _268_MissingNumber {
         testMissingNumber(nums3);
     }
 
+    /**
+     * A função {@code missingNumber} encontra o número faltante em um array contendo
+     * todos os números de 0 a n, exceto um. O array não possui números duplicados e
+     * sempre falta um número no intervalo de 0 a n.
+     *
+     * <p>O algoritmo utiliza a fórmula da soma dos primeiros n inteiros, que é
+     * {@code n * (n + 1) / 2}, para calcular a soma esperada e subtrai a soma dos
+     * números presentes no array. O resultado final será o número que está faltando.</p>
+     *
+     * @param nums O array de inteiros contendo n-1 números distintos no intervalo de 0 a n.
+     * @return O número faltante no intervalo de 0 a n.
+     *
+     * @throws IllegalArgumentException se o array de entrada estiver vazio.
+     */
     public static int missingNumber(int[] nums) {
-        int n = nums.length;
+        int n = nums.length; // 'n' é o tamanho do array, que deve conter n-1 elementos.
+
+        // Calcula a soma esperada de todos os números de 0 a n
+        // usando a fórmula da soma aritmética.
         int sum = n * (n + 1) / 2;
+
+        /*
+         * Subtrai os valores do array da soma calculada.
+         * Ao final, a variável 'sum' conterá o número que está faltando.
+         */
         for (int i = 0; i < nums.length; i++) {
             int num = nums[i];
             sum -= num;
         }
+
+        // Retorna o número que está faltando.
         return sum;
     }
+
 
     public static void testMissingNumber(int[] nums) {
         System.out.println("\nInput: nums = " + Arrays.toString(nums));
