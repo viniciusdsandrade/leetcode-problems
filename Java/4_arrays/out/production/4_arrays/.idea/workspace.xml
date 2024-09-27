@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f1de185-2890-405d-b022-a0ec1745b3f0" name="Changes" comment="" />
+    <list default="true" id="9ce9527b-5df1-4444-b17e-acd41fa3336c" name="Changes" comment="feat: _819_MostCommonWord.java">
+      <change afterPath="$PROJECT_DIR$/_SquareArraySorted.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,14 +31,15 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/viniciusdsandrade/leetcode-problems&quot;,
+    &quot;url&quot;: &quot;https://github.com/viniciusdsandrade/leetcode-problems.git&quot;,
     &quot;accountId&quot;: &quot;28e3c90e-dd11-46e9-a6bf-3b898331966c&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
 }</component>
-  <component name="ProjectId" id="2jiFvXvgjTvcsywoSdepPEv4hdt" />
+  <component name="ProjectId" id="2jvO6vQDMM8rBUEjZLNvIm8Ezuo" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -47,54 +50,34 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Application._1528_ShuffleString.executor&quot;: &quot;Run&quot;,
-    &quot;Application._1822_SignOfTheProductOfAnArray.executor&quot;: &quot;Run&quot;,
-    &quot;Application._268_MissingNumber.executor&quot;: &quot;Run&quot;,
-    &quot;Application._2798_NumberOfEmployeesWhoMetTheTarget.executor&quot;: &quot;Run&quot;,
+    &quot;Application._1929_ConcatenationOfArray.executor&quot;: &quot;Debug&quot;,
+    &quot;Application._819_MostCommonWord.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/vinic/OneDrive/Área de Trabalho/leetcode-problems/Java/4_arrays&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Pichau/Desktop/leetcode-problems/Java/1_integers&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;application.passwordSafe&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
-    ]
   }
 }</component>
-  <component name="RunManager" selected="Application._53_MaximumSubarray">
-    <configuration name="_1528_ShuffleString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_1528_ShuffleString" />
+  <component name="RunManager" selected="Application._SquareArraySorted">
+    <configuration name="_819_MostCommonWord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_819_MostCommonWord" />
       <module name="4_arrays" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_1822_SignOfTheProductOfAnArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_1822_SignOfTheProductOfAnArray" />
-      <module name="4_arrays" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_2798_NumberOfEmployeesWhoMetTheTarget" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_2798_NumberOfEmployeesWhoMetTheTarget" />
-      <module name="4_arrays" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_53_MaximumSubarray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_53_MaximumSubarray" />
+    <configuration name="_SquareArraySorted" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_SquareArraySorted" />
       <module name="4_arrays" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,80 +85,50 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application._53_MaximumSubarray" />
-        <item itemvalue="Application._2798_NumberOfEmployeesWhoMetTheTarget" />
-        <item itemvalue="Application._1822_SignOfTheProductOfAnArray" />
-        <item itemvalue="Application._1528_ShuffleString" />
+        <item itemvalue="Application._SquareArraySorted" />
+        <item itemvalue="Application._819_MostCommonWord" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.22855.74" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.22855.74" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3f1de185-2890-405d-b022-a0ec1745b3f0" name="Changes" comment="" />
-      <created>1721862222405</created>
+      <changelist id="9ce9527b-5df1-4444-b17e-acd41fa3336c" name="Changes" comment="" />
+      <created>1722263912863</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1721862222405</updated>
-      <workItem from="1721862223419" duration="1850000" />
-      <workItem from="1722027183365" duration="993000" />
-      <workItem from="1722030680590" duration="750000" />
-      <workItem from="1722031514753" duration="88000" />
-      <workItem from="1722087432453" duration="131000" />
-      <workItem from="1722087589300" duration="377000" />
-      <workItem from="1722265215505" duration="8000" />
-      <workItem from="1722288355071" duration="551000" />
-      <workItem from="1722880841450" duration="118000" />
-      <workItem from="1722885883694" duration="291000" />
-      <workItem from="1724593477032" duration="1044000" />
-      <workItem from="1726791234068" duration="1658000" />
-      <workItem from="1726874050983" duration="17000" />
-      <workItem from="1726874080711" duration="48000" />
-      <workItem from="1727016233516" duration="847000" />
-      <workItem from="1727022011330" duration="48000" />
-      <workItem from="1727127774305" duration="1073000" />
+      <updated>1722263912863</updated>
+      <workItem from="1722263916149" duration="1314000" />
+      <workItem from="1722362833208" duration="91000" />
+      <workItem from="1726690312371" duration="1250000" />
+      <workItem from="1726931662386" duration="16000" />
+      <workItem from="1727459346003" duration="325000" />
     </task>
-    <task id="LOCAL-00001" summary="feat: _1528_ShuffleString.java">
+    <task id="LOCAL-00001" summary="feat: _1929_ConcatenationOfArray.java">
       <option name="closed" value="true" />
-      <created>1721864384277</created>
+      <created>1722264956681</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1721864384277</updated>
+      <updated>1722264956681</updated>
     </task>
-    <task id="LOCAL-00002" summary="feat: _1822_SignOfTheProductOfAnArray.java">
+    <task id="LOCAL-00002" summary="feat: _819_MostCommonWord.java">
       <option name="closed" value="true" />
-      <created>1722031329679</created>
+      <created>1726691268400</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1722031329679</updated>
+      <updated>1726691268400</updated>
     </task>
-    <task id="LOCAL-00003" summary="feat: _2798_NumberOfEmployeesWhoMetTheTarget.java">
-      <option name="closed" value="true" />
-      <created>1724594178579</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1724594178579</updated>
-    </task>
-    <task id="LOCAL-00004" summary="feat: _268_MissingNumber.java">
-      <option name="closed" value="true" />
-      <created>1726792714946</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1726792714946</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,10 +146,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: _1528_ShuffleString.java" />
-    <MESSAGE value="feat: _1822_SignOfTheProductOfAnArray.java" />
-    <MESSAGE value="feat: _2798_NumberOfEmployeesWhoMetTheTarget.java" />
-    <MESSAGE value="feat: _268_MissingNumber.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: _268_MissingNumber.java" />
+    <MESSAGE value="feat: _1929_ConcatenationOfArray.java" />
+    <MESSAGE value="feat: _819_MostCommonWord.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: _819_MostCommonWord.java" />
   </component>
 </project>
