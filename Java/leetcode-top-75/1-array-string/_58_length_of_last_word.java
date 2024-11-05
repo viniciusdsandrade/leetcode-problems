@@ -1,6 +1,6 @@
 import static java.lang.System.nanoTime;
 
-public class _58_Length_Of_Last_Word {
+public class _58_length_of_last_word {
 
     /*
     58. Length of Last Word
