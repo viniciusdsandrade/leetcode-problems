@@ -4,3 +4,4 @@ out/
 !**/src/test/**/out/
 .idea/
 .idea/workspace.xml
+.idea

@@ -1,5 +1,7 @@
 package _9_linked_list
 
+import java.lang.System.nanoTime
+
 class ListNode(var `val`: Int) {
 
     var next: ListNode? = null
@@ -62,9 +64,9 @@ fun testMergeTwoLists(list1: ListNode?, list2: ListNode?) {
     println("\nlist1: $list1")
     println("list2: $list2")
 
-    val inicio = System.nanoTime()
+    val inicio = nanoTime()
     val result = mergeTwoLists(list1, list2)
-    val fim = System.nanoTime()
+    val fim = nanoTime()
 
     println("Time: ${fim - inicio}")
     println("result: $result")

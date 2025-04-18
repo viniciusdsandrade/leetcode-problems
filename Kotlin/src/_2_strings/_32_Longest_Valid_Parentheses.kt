@@ -1,5 +1,7 @@
 package _2_strings
 
+import java.lang.System.nanoTime
+
 /*
     32. Longest Valid Parentheses
     Given a string containing just the characters '(' and ')',
@@ -43,9 +45,9 @@ fun longestValidParentheses(s: String): Int {
 
 fun testLongestValidParentheses(s: String) {
     println("\ns: $s")
-    val inicio = System.nanoTime()
+    val inicio = nanoTime()
     val result = longestValidParentheses(s)
-    val fim = System.nanoTime()
+    val fim = nanoTime()
 
     println("result: $result")
     println("Time: ${fim - inicio}ns")
