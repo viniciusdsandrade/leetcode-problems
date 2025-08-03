@@ -1,3 +1,5 @@
+import static java.lang.System.nanoTime;
+
 public class _7_ReverseInteger {
 
     /*
@@ -23,7 +25,7 @@ public class _7_ReverseInteger {
     -2^31 <= x <= 2^31 - 1
     */
 
-    public static void main(String[] args) {
+    public static void main(String[] ignoredArgs) {
         testReverse(123);
         testReverse(-123);
         testReverse(120);
@@ -37,8 +39,21 @@ public class _7_ReverseInteger {
 
         while (x != 0) {
             int digit = x % 10;
+            // Ao pegar o resto da divisão do número a ser "revertido" por 10, obtemos o seu último dígito
+            // Exemplo: 123/10 = 12, resto 3. Portanto, o último dígito é 3.
 
-            // Check for overflow
+            // Quando dividimos por 10, estamos efetivamente removendo o último dígito de x.
+            // Exemplo 123/10 = 12.
+            // (na vdd é 12.3, mas quando dividimos dois inteiros, o resultado é um inteiro, ou seja, a parte decimal é descartada)
+            // Isso é feito para preparar x para a próxima iteração, onde o próximo dígito será processado.
+
+            // Usamos a fórmula reversed = reversed * 10 + digit;
+            // Como a variável reverse sempre começa com 0, na primeira iteração, reversed sempre vai ser igual ao último digito do número(digit)
+            // Exemplo, se x = 123,
+            // Na primeira iteração digit será 3 e reversed será 0 * 10 + 3 = 3.
+            // Na segunda iteração, digit será 2, pois 12 % 10 = 2, e reversed será 3 * 10 + 2 = 32.
+            // Na terceira iteração, digit será 1, pois 1 % 10 = 1, e reversed será 32 * 10 + 1 = 321.
+
             if (reversed > Integer.MAX_VALUE / 10 ||
                     (reversed == Integer.MAX_VALUE / 10 && digit > 7))
                 return 0;
@@ -58,9 +73,9 @@ public class _7_ReverseInteger {
     private static void testReverse(int x) {
         System.out.println("Input: x = " + x);
 
-        long startTime = System.nanoTime();
+        long startTime = nanoTime();
         int result = reverse(x);
-        long endTime = System.nanoTime();
+        long endTime = nanoTime();
 
         System.out.println("Output: " + result);
         System.out.println("Execution time: " + (endTime - startTime) + "ns\n");
