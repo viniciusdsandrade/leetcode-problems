@@ -26,9 +26,13 @@ public class _7_ReverseInteger {
     */
 
     public static void main(String[] ignoredArgs) {
-        testReverse(123);
-        testReverse(-123);
-        testReverse(120);
+//        testReverse(123);
+//        testReverse(-123);
+//        testReverse(120);
+
+        testReverseVerbose(123);
+        testReverseVerbose(-123);
+        testReverseVerbose(120);
     }
 
     public static int reverse(int x) {
@@ -68,6 +72,62 @@ public class _7_ReverseInteger {
         }
 
         return reversed;
+    }
+
+    public static int reverseVerbose(int x) {
+        System.out.println("Iniciando reverseVerbose com x = " + x);
+        if (x == 0) {
+            System.out.println("x é zero — resultado imediato: 0");
+            return 0;
+        }
+
+        int reversed = 0;
+        System.out.println("--------------------------------------------------");
+
+        while (x != 0) {
+            int digit = x % 10;
+            System.out.println("Extrai dígito:");
+            System.out.println("  digit = x % 10 = " + digit);
+            System.out.println("  x antes da divisão = " + x);
+
+            // Overflow check (limite positivo)
+            System.out.println("  reversed = " + reversed);
+
+            if (reversed > Integer.MAX_VALUE / 10 ||
+                (reversed == Integer.MAX_VALUE / 10 && digit > 7)) {
+                System.out.println("  → Detectado overflow! Retornando 0.");
+                return 0;
+            }
+
+            // Underflow check (limite negativo)
+            System.out.println("  reversed = " + reversed);
+            if (reversed < Integer.MIN_VALUE / 10 ||
+                (reversed == Integer.MIN_VALUE / 10 && digit < -8)) {
+                System.out.println("  → Detectado underflow! Retornando 0.");
+                return 0;
+            }
+
+            // Atualiza x e reversed
+            x = x / 10;
+            System.out.println("  x após x = x/10 -> " + x);
+            reversed = reversed * 10 + digit;
+            System.out.println("  reversed após reversed = reversed*10 + digit -> " + reversed);
+            System.out.println("--------------------------------------------------");
+        }
+
+        System.out.println("Final do loop. Valor invertido = " + reversed);
+        return reversed;
+    }
+
+    private static void testReverseVerbose(int x) {
+        System.out.println("Input: x = " + x);
+
+        long startTime = nanoTime();
+        int result = reverseVerbose(x);
+        long endTime = nanoTime();
+
+        System.out.println("Output: " + result);
+        System.out.println("Execution time: " + (endTime - startTime) + "ns\n");
     }
 
     private static void testReverse(int x) {
