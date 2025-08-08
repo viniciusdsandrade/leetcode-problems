@@ -1,3 +1,6 @@
+import static java.lang.IO.println;
+import static java.lang.System.nanoTime;
+
 public class _58_LengthOfLastWord {
     public static void main(String[] args) {
 
@@ -21,10 +24,10 @@ public class _58_LengthOfLastWord {
     }
 
     /*
-        A função devolve o tamanho da última palavra de uma string.
+        A função devolve o tamanho da última palavra de uma String.
 
         1) Regras de borda:
-           - Se a string for vazia (s.isEmpty()) ou maior que 10_000 caracteres,
+           - Se a String for vazia (s.isEmpty()) ou maior que 10_000 caracteres,
              a função devolve 0 imediatamente. Isso evita trabalho desnecessário
              e respeita um limite superior (útil em problemas com restrição de input).
 
@@ -38,7 +41,7 @@ public class _58_LengthOfLastWord {
            - Se o caractere não for espaço, incrementamos count,
              pois ele faz parte da última palavra.
 
-        4) Se o laço termina sem encontrar novo espaço (ex.: a string inteira é uma palavra,
+        4) Se o laço termina sem encontrar novo espaço (ex.: a String inteira é uma palavra,
            ou há só uma palavra seguida de espaços no fim), retornamos count.
 
         Observações:
@@ -54,7 +57,7 @@ public class _58_LengthOfLastWord {
         // Inicializa um contador
         int count = 0;
 
-        // Itera sobre a string de trás para frente
+        // Itera sobre a String de trás para frente
         for (int i = s.length() - 1; i >= 0; i--) {
             // Se o caractere atual for um espaço e o contador for maior que zero, retorna o contador
             if (s.charAt(i) == ' ' && count > 0) return count;
@@ -71,14 +74,14 @@ public class _58_LengthOfLastWord {
         // Guards simples
         if (s == null || s.isEmpty() || s.length() > 10_000) {
             if (debug) {
-                System.out.printf("[guard] inválido: s=null? %b | vazio? %b | len=%d >10000? %b -> retorna 0%n",
+                printf("[guard] inválido: s=null? %b | vazio? %b | len=%d >10000? %b -> retorna 0%n",
                         s == null, s != null && s.isEmpty(), (s == null ? -1 : s.length()), (s != null && s.length() > 10_000));
             }
             return 0;
         }
 
         if (debug) {
-            System.out.printf("[1] Entrada: \"%s\" (len=%d)%n", s, s.length());
+            printf("[1] Entrada: \"%s\" (len=%d)%n", s, s.length());
         }
 
         int i = s.length() - 1;
@@ -90,8 +93,8 @@ public class _58_LengthOfLastWord {
             pulados++;
         }
         if (debug) {
-            System.out.printf("[2] Espaços à direita ignorados: %d | i=%d%n", pulados, i);
-            if (i < 0) System.out.println("[2.1] String era só espaços -> retorna 0");
+            printf("[2] Espaços à direita ignorados: %d | i=%d%n", pulados, i);
+            if (i < 0) println("[2.1] String era só espaços -> retorna 0");
         }
         if (i < 0) return 0; // só espaços
 
@@ -100,15 +103,15 @@ public class _58_LengthOfLastWord {
         while (i >= 0 && s.charAt(i) != ' ') {
             count++;
             if (debug) {
-                System.out.printf("[3.%d] char='%c' -> count=%d%n", count, s.charAt(i), count);
+                printf("[3.%d] char='%c' -> count=%d%n", count, s.charAt(i), count);
             }
             i--;
         }
 
         // Encerramento didático
         if (debug) {
-            System.out.printf("[4] Parou em i=%d (%s)%n", i, (i < 0 ? "início da string" : "encontrou espaço"));
-            System.out.printf("[5] Resultado: %d%n", count);
+            printf("[4] Parou em i=%d (%s)%n", i, (i < 0 ? "início da string" : "encontrou espaço"));
+            printf("[5] Resultado: %d%n", count);
         }
         return count;
     }
@@ -116,24 +119,29 @@ public class _58_LengthOfLastWord {
     public static void testLengthOfLastWordDebug(String s) {
         System.out.println("\nInput:  " + s);
 
-        long start = System.nanoTime();
+        long start = nanoTime();
         int result = lengthOfLastWordDebug(s, true);
-        long end = System.nanoTime();
+        long end = nanoTime();
 
-        System.out.println("Output: " + result);
-        System.out.println("Time: " + (end - start) + " ns");
-        System.out.printf("Time: %.5f ms\n", (end - start) / 1_000_000.0);
+        println("Output: " + result);
+        println("Time: " + (end - start) + " ns");
+        printf("Time: %.5f ms\n", (end - start) / 1_000_000.0);
     }
 
     public static void testLengthOfLastWord(String s) {
-        System.out.println("\nInput:  " + s);
+        println("\nInput:  " + s);
 
-        long start = System.nanoTime();
+        long start = nanoTime();
         int result = lengthOfLastWord(s);
-        long end = System.nanoTime();
+        long end = nanoTime();
 
-        System.out.println("Output: " + result);
-        System.out.println("Time: " + (end - start) + " ns");
-        System.out.printf("Time: %.5f ms\n", (end - start) / 1_000_000.0);
+        println("Output: " + result);
+        println("Time: " + (end - start) + " ns");
+        printf("Time: %.5f ms\n", (end - start) / 1_000_000.0);
+    }
+
+    public static void printf(String format, Object... args) {
+        System.out.printf(format, args);
+        System.out.flush();
     }
 }
