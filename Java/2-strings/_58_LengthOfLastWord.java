@@ -1,5 +1,6 @@
 import static java.lang.IO.println;
 import static java.lang.System.nanoTime;
+import static util.Print.printf;
 
 public class _58_LengthOfLastWord {
     public static void main(String[] args) {
@@ -117,7 +118,7 @@ public class _58_LengthOfLastWord {
     }
 
     public static void testLengthOfLastWordDebug(String s) {
-        System.out.println("\nInput:  " + s);
+        println("\nInput:  " + s);
 
         long start = nanoTime();
         int result = lengthOfLastWordDebug(s, true);
@@ -138,10 +139,5 @@ public class _58_LengthOfLastWord {
         println("Output: " + result);
         println("Time: " + (end - start) + " ns");
         printf("Time: %.5f ms\n", (end - start) / 1_000_000.0);
-    }
-
-    public static void printf(String format, Object... args) {
-        System.out.printf(format, args);
-        System.out.flush();
     }
 }

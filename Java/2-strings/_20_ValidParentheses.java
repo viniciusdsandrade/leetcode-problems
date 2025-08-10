@@ -3,6 +3,7 @@ import java.util.List;
 
 import static java.lang.IO.println;
 import static java.lang.System.nanoTime;
+import static util.Print.printf;
 
 public class _20_ValidParentheses {
     /*
@@ -69,26 +70,27 @@ public class _20_ValidParentheses {
 
     /*
 
-    A função começa rejeitando de cara strings de tamanho ímpar (s.length() % 2 != 0),
-    porque não dá pra casar aberturas e fechamentos — retorna false.
-    Em seguida define a lista de aberturas open = ['(', '{', '['],
-    cria uma “pilha” com um char[] stack do tamanho da string e um índice top = -1 (pilha vazia).
-    Percorre cada caractere c: se for abertura (open.contains(c)), faz push incrementando top e guardando c em stack[top].
-    Se for fechamento, primeiro confere se a pilha está vazia (top == -1); se estiver, já falha.
-    Depois checa se o fechamento casa com a abertura do topo:
-    ) com (,
-    } com {,
-    ] com [;
-    se não casar, retorna false.
+        A função começa rejeitando de cara Strings de tamanho ímpar (s.length() % 2 != 0),
+        porque não dá para casar aberturas e fechamentos — retorna false.
+        Em seguida define a lista de aberturas open = ['(', '{', '['],
+        cria uma “pilha” com um char[] stack do tamanho da String e um índice top = -1 (pilha vazia).
+        Percorre cada caractere c: se for abertura (open.contains(c)), faz push incrementando top e guardando c em stack[top].
+        Se for fechamento, primeiro confere se a pilha está vazia (top == -1); se estiver, já falha.
+        Depois checa se o fechamento casa com a abertura do topo:
+        ) com (,
+        } com {,
+        ] com [;
+        se não casar, retorna false.
 
-    Se casar, faz pop decrementando top.
+        Se casar, faz pop decrementando top.
 
-    Ao final do laço, a expressão é válida somente se não sobrou abertura pendente —
-    isto é, se a pilha ficou vazia (top == -1).
+        Ao final do laço, a expressão é válida somente se não sobrou abertura pendente —
+        isto é, se a pilha ficou vazia (top == -1).
+
      */
 
     public static boolean isValid(String s) {
-        // Verifica se o comprimento da string é ímpar, se sim, a expressão não pode ser válida
+        // Verifica se o comprimento da String é ímpar, se sim, a expressão não pode ser válida
         if (s.length() % 2 != 0) return false;
 
         // Lista de caracteres de abertura
@@ -238,10 +240,5 @@ public class _20_ValidParentheses {
         println("Time: " + (end - start) + " ns");
         printf("Time: %.5f ms\n", (end - start) / 1_000_000.0);
         println();
-    }
-
-    public static void printf(String format, Object... args) {
-        System.out.printf(format, args);
-        System.out.flush();
     }
 }

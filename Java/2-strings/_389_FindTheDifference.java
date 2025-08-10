@@ -1,3 +1,11 @@
+import java.util.HashMap;
+import java.util.Map;
+
+import static java.lang.IO.println;
+import static java.lang.System.nanoTime;
+import static java.util.Arrays.sort;
+import static util.Print.printf;
+
 public class _389_FindTheDifference {
     
     /*
@@ -25,41 +33,165 @@ public class _389_FindTheDifference {
      */
 
     public static void main(String[] args) {
-        testFindTheDifference("abcd", "abcde");
-        testFindTheDifference("", "y");
-        testFindTheDifference("a", "aa");
-        testFindTheDifference("ae", "aea");
-        testFindTheDifference("ae", "eaa");
+//        testFindTheDifference("abcd", "abcde");
+//        testFindTheDifference("", "y");
+//        testFindTheDifference("a", "aa");
+//        testFindTheDifference("ae", "aea");
+//        testFindTheDifference("ae", "eaa");
+
+        testFindTheDifferenceTrace("abcd", "abcde");
+        testFindTheDifferenceTrace("", "y");
+        testFindTheDifferenceTrace("a", "aa");
+        testFindTheDifferenceTrace("ae", "aea");
+        testFindTheDifferenceTrace("ae", "eaa");
     }
 
+    /*
+
+   A função usa um vetor fixo de 26 inteiros (letters) para contar ocorrências por letra ‘a’..‘z’.
+   A escolha de 26 posições é válida porque o problema restringe s e t a letras minúsculas inglesas.
+
+   Passo a passo:
+   1) Inicializa letters com zeros.
+   2) Percorre s e faz contagem: para cada caractere c de s, incrementa letters[c - 'a'].
+   3) Percorre t e “desconta”: para cada caractere c de t, decrementa letters[c - 'a'].
+   4) Ao final, procura a primeira posição com valor negativo; essa posição indica a letra “extra”
+      presente em t (porque todas as letras de s se anulam com t, e apenas a letra adicionada
+      fica com contagem -1). Retorna (char) (i + 'a').
+
+   Por que funciona:
+   • Invariantes de contagem: toda letra que aparece k vezes em s e k vezes em t zera no somatório
+     (k - k = 0). A única diferença é a letra adicionada em t, que resulta em -1 após o passo (3).
+   • Ex.: s="ae", t="eaa" → após contar s: {a:1, e:1}; ao subtrair t: e→0, a→0, a→-1 → resposta='a'.
+
+   Complexidade:
+   • Tempo O(n), onde n = |s| + |t| (dois laços lineares).
+   • Espaço O(1), pois o tamanho do vetor é constante (26), independente do tamanho das strings.
+
+   Observação didática:
+   • Existe também a solução por XOR: fazer o XOR de todos os chars de s e de t.
+     Como x^x=0 e 0^y=y, tudo cancela e sobra exatamente a letra extra. Também é O(n) e O(1).
+
+*/
     public static char findTheDifference(String s, String t) {
-        
+
         int[] letters = new int[26];
-        
-        for (int i = 0; i < s.length(); i++) 
+
+        for (int i = 0; i < s.length(); i++)
             letters[s.charAt(i) - 'a']++;
-        
-        for (int i = 0; i < t.length(); i++) 
+
+        for (int i = 0; i < t.length(); i++)
             letters[t.charAt(i) - 'a']--;
-        
+
         for (int i = 0; i < letters.length; i++) {
-            if (letters[i] < 0) 
+            if (letters[i] < 0)
                 return (char) (i + 'a');
         }
-        
+
         return ' ';
     }
 
+    public static char findTheDifferenceXor(String s, String t) {
+        int x = 0;
+        for (int i = 0; i < s.length(); i++) x ^= s.charAt(i);
+        for (int i = 0; i < t.length(); i++) x ^= t.charAt(i);
+        return (char) x;
+    }
+
+    public static char findTheDifferenceMap(String s, String t) {
+        Map<Character, Integer> freq = new HashMap<>();
+
+        // conta s
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            freq.put(c, freq.getOrDefault(c, 0) + 1);
+        }
+
+        // subtrai t; se passar de zero e ficar negativo, achamos a extra
+        for (int i = 0; i < t.length(); i++) {
+            char c = t.charAt(i);
+            int newCount = freq.getOrDefault(c, 0) - 1;
+            if (newCount < 0) return c;        // letra extra
+            if (newCount == 0) freq.remove(c); // limpeza opcional
+            else freq.put(c, newCount);
+        }
+
+        return ' '; // não deveria acontecer para entradas válidas
+    }
+
+    public static char findTheDifferenceSort(String s, String t) {
+        char[] a = s.toCharArray();
+        char[] b = t.toCharArray();
+        sort(a);
+        sort(b);
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] != b[i]) return b[i];
+        }
+        return b[b.length - 1];
+    }
+
+    public static char findTheDifferenceTrace(String s, String t) {
+        println("\n[TRACE] s=\"" + s + "\", t=\"" + t + "\"");
+        int[] letters = new int[26];
+
+        println("[TRACE] Início: letters[26] = todos 0");
+
+        println("[TRACE] Contando caracteres de s:");
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            int idx = c - 'a';
+            int antes = letters[idx];
+            letters[idx]++;
+            println(String.format("  i=%d, c='%c' -> letters[%d]: %d -> %d",
+                    i, c, idx, antes, letters[idx]));
+        }
+
+        println("[TRACE] Subtraindo caracteres de t:");
+        for (int j = 0; j < t.length(); j++) {
+            char c = t.charAt(j);
+            int idx = c - 'a';
+            int antes = letters[idx];
+            letters[idx]--;
+            println(String.format("  j=%d, c='%c' -> letters[%d]: %d -> %d",
+                    j, c, idx, antes, letters[idx]));
+        }
+
+        println("[TRACE] Varredura final (procura valor negativo):");
+        for (int k = 0; k < 26; k++) {
+            if (letters[k] < 0) {
+                char added = (char) (k + 'a');
+                println(String.format("  letters[%d]=%d < 0 -> caractere extra='%c'",
+                        k, letters[k], added));
+                return added;
+            }
+        }
+
+        println("[TRACE] Nenhum valor negativo encontrado (entrada inválida).");
+        return ' ';
+    }
+
+    public static void testFindTheDifferenceTrace(String s, String t) {
+        println("\n==== TESTE DE MESA ====");
+        println("Caso: s=\"" + s + "\", t=\"" + t + "\"");
+
+        long start = nanoTime();
+        char result = findTheDifferenceTrace(s, t);
+        long end = nanoTime();
+
+        println("[TRACE] Resultado final: " + result);
+        println("[TRACE] Tempo: " + (end - start) + " ns");
+        printf("[TRACE] Tempo: %.5f ms\n", (end - start) / 1_000_000.0);
+    }
+
     public static void testFindTheDifference(String s, String t) {
+        println("\nInput:  " + s + ", " + t);
 
-        System.out.println("\nInput:  " + s + ", " + t);
-
-        long start = System.nanoTime();
+        long start = nanoTime();
         char result = findTheDifference(s, t);
-        long end = System.nanoTime();
+        long end = nanoTime();
 
-        System.out.println("Output: " + result);
-        System.out.println("Time: " + (end - start) + " ns");
-        System.out.printf("Time: %.5f ms\n", (end - start) / 1_000_000.0);
+        println("Output: " + result);
+        println("Time: " + (end - start) + " ns");
+        printf("Time: %.5f ms\n", (end - start) / 1_000_000.0);
     }
 }

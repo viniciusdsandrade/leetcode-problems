@@ -1,6 +1,7 @@
 import static java.lang.IO.println;
 import static java.lang.System.nanoTime;
 import static java.util.Objects.requireNonNull;
+import static util.Print.printf;
 
 public class _205_IsomorphicStrings {
 
@@ -194,8 +195,4 @@ public class _205_IsomorphicStrings {
         println("Execution time = " + (end - start) + " ns\n");
     }
 
-    public static void printf(String format, Object... args) {
-        System.out.printf(format, args);
-        System.out.flush();
-    }
 }
