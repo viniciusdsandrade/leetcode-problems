@@ -83,6 +83,21 @@ public class _389_FindTheDifference {
      Como x^x=0 e 0^y=y, tudo cancela e sobra exatamente a letra extra. Também é O(n) e O(1).
 
 */
+
+    public static char findTheDifferenceXor(String s, String t) {
+        int x = 0;
+        for (int i = 0; i < s.length(); i++) x ^= s.charAt(i);
+        for (int i = 0; i < t.length(); i++) x ^= t.charAt(i);
+        return (char) x;
+    }
+
+    public static char findTheDifferenceSum(String s, String t) {
+        int sum = 0;
+        for (int i = 0; i < t.length(); i++) sum += t.charAt(i);
+        for (int i = 0; i < s.length(); i++) sum -= s.charAt(i);
+        return (char) sum;
+    }
+
     public static char findTheDifference(String s, String t) {
         int[] letters = new int[26];
 
@@ -95,13 +110,6 @@ public class _389_FindTheDifference {
         }
 
         return ' ';
-    }
-
-    public static char findTheDifferenceXor(String s, String t) {
-        int x = 0;
-        for (int i = 0; i < s.length(); i++) x ^= s.charAt(i);
-        for (int i = 0; i < t.length(); i++) x ^= t.charAt(i);
-        return (char) x;
     }
 
     public static char findTheDifferenceMap(String s, String t) {
@@ -134,13 +142,6 @@ public class _389_FindTheDifference {
             if (a[i] != b[i]) return b[i];
         }
         return b[b.length - 1];
-    }
-
-    public static char findTheDifferenceSum(String s, String t) {
-        int sum = 0;
-        for (int i = 0; i < t.length(); i++) sum += t.charAt(i);
-        for (int i = 0; i < s.length(); i++) sum -= s.charAt(i);
-        return (char) sum;
     }
 
     public static char findTheDifferenceTrace(String s, String t) {
