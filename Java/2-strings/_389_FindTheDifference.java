@@ -84,14 +84,10 @@ public class _389_FindTheDifference {
 
 */
     public static char findTheDifference(String s, String t) {
-
         int[] letters = new int[26];
 
-        for (int i = 0; i < s.length(); i++)
-            letters[s.charAt(i) - 'a']++;
-
-        for (int i = 0; i < t.length(); i++)
-            letters[t.charAt(i) - 'a']--;
+        for (int i = 0; i < s.length(); i++) letters[s.charAt(i) - 'a']++;
+        for (int i = 0; i < t.length(); i++) letters[t.charAt(i) - 'a']--;
 
         for (int i = 0; i < letters.length; i++) {
             if (letters[i] < 0)
@@ -227,8 +223,8 @@ public class _389_FindTheDifference {
     private static final IntBinaryOperator XOR_OP = (a, b) -> a ^ b;
 
     private static void blackHole(char z) {
-        BLACK_HOLE.getAndAccumulate(z, XOR_OP); // aplica prev ^ z de forma atômica (RMW atômico)
-
+        // aplica prev ^ z de forma atômica (RMW atômico)
+        BLACK_HOLE.getAndAccumulate(z, XOR_OP);
     }
 
     public static void benchmarkAllRuntimes() {
