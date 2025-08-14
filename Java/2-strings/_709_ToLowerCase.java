@@ -1,3 +1,6 @@
+import static java.lang.IO.println;
+import static util.Print.printf;
+
 public class _709_ToLowerCase {
 
     /*
@@ -23,12 +26,12 @@ public class _709_ToLowerCase {
      */
 
     public static void main(String[] args) {
-        test("Hello");
-        test("here");
-        test("LOVELY");
-        test("Hello World!");
-        test("Hello World! 123");
-        test("ViniciusDSoSantosANDRADE");
+        testDebug("Hello");
+        testDebug("here");
+        testDebug("LOVELY");
+        testDebug("Hello World!");
+        testDebug("Hello World! 123");
+        testDebug("ViniciusDSoSantosANDRADE");
     }
 
     public static String toLowerCase(String s) {
@@ -42,13 +45,48 @@ public class _709_ToLowerCase {
         return sb.toString();
     }
 
+    public static String toLowerCaseDebug(String s) {
+        println("=== toLowerCase: modo debug ===");
+        println("Entrada: \"" + s + "\" (len=" + s.length() + ")");
+
+        StringBuilder sb = new StringBuilder();
+        int i = 0; // apenas para mostrar o índice no debug
+
+        for (char c : s.toCharArray()) {
+            println("\n-- i=" + i);
+            println("char = '" + c + "' | code = " + (int) c);
+            println((c >= 65 && c <= 90)
+                    ? "É maiúscula ASCII (A..Z). Convertendo somando 32…"
+                    : "Não é maiúscula ASCII. Mantém igual.");
+
+            if (c >= 65 && c <= 90)
+                sb.append((char) (c + 32));
+            else
+                sb.append(c);
+
+            println("Parcial: \"" + sb + "\"");
+
+            i++;
+        }
+
+        println("\nResultado final: \"" + sb + "\"");
+        println("=== fim do debug ===\n");
+
+        return sb.toString();
+    }
+
     public static String toLowerCase2(String s) {
         return s.toLowerCase();
     }
 
-    public static void test(String s) {
+    public static void testDebug(String s) {
+        println("\nInput: " + s);
+        String result = toLowerCaseDebug(s);
+        println("Output: " + result);
+    }
 
-        System.out.println("\nInput: " + s);
+    public static void test(String s) {
+        println("\nInput: " + s);
 
         long start = System.nanoTime();
         String result = toLowerCase(s);
@@ -60,9 +98,9 @@ public class _709_ToLowerCase {
 
         double razao = (double) (end - start) / (end2 - start2);
 
-        System.out.println("Output: " + result);
-        System.out.println("Runtime1: (char) (c + 32): " + (end - start) + " ns");
-        System.out.println("Runtime2: s.toLowerCase(): " + (end2 - start2) + " ns");
-        System.out.printf("Runtime1 is %.6f times faster than Runtime2\n", razao);
+        println("Output: " + result);
+        println("Runtime1: (char) (c + 32): " + (end - start) + " ns");
+        println("Runtime2: s.toLowerCase(): " + (end2 - start2) + " ns");
+        printf("Runtime1 is %.6f times faster than Runtime2\n", razao);
     }
 }
